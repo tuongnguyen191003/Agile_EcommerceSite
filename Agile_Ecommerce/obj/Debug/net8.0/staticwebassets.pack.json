@@ -1,0 +1,637 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Agile_Ecommerce.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Agile_Ecommerce.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\css\\prettyPhoto.css",
+      "PackagePath": "staticwebassets\\css\\prettyPhoto.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\css\\price-range.css",
+      "PackagePath": "staticwebassets\\css\\price-range.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\404\\404.png",
+      "PackagePath": "staticwebassets\\images\\404\\404.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\banner\\banner AirPods Pro 2 T6_PC.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner AirPods Pro 2 T6_PC.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\banner\\banner Mac tổng_MB (1).jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner Mac tổng_MB (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\banner\\banner Mac.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner Mac.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\banner\\banner MacBook Air M1 T6_PC.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner MacBook Air M1 T6_PC.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\banner\\banner iPad Air M2-T7_MB.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner iPad Air M2-T7_MB.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\banner\\banner iPad Air M2-T7_PC.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner iPad Air M2-T7_PC.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\banner\\banner iPhone 15 Pro Max T7_MB.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner iPhone 15 Pro Max T7_MB.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\banner\\banner iPhone 15 Pro Max T7_PC.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner iPhone 15 Pro Max T7_PC.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\blog\\blog-one.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-one.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\blog\\blog-three.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-three.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\blog\\blog-two.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-two.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\blog\\man-four.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\man-four.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\blog\\man-one.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\man-one.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\blog\\man-three.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\man-three.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\blog\\man-two.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\man-two.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\blog\\socials.png",
+      "PackagePath": "staticwebassets\\images\\blog\\socials.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\cart\\one.png",
+      "PackagePath": "staticwebassets\\images\\cart\\one.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\cart\\three.png",
+      "PackagePath": "staticwebassets\\images\\cart\\three.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\cart\\two.png",
+      "PackagePath": "staticwebassets\\images\\cart\\two.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\B Trần.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\B Trần.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Bình An _ Phương Nga.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Bình An _ Phương Nga.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Duydam.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Duydam.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\HUyền Lizze _ Quỳnh Koool.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\HUyền Lizze _ Quỳnh Koool.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Huỳnh Anh.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Huỳnh Anh.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Hà Việt Dũng.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Hà Việt Dũng.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Hồng Diễm.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Hồng Diễm.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Lâm Đức Anh.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Lâm Đức Anh.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Lê Bống.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Lê Bống.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Mạnh Trường.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Mạnh Trường.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Quang Thắng.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Quang Thắng.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Thu Mít.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Thu Mít.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Trung Anh.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Trung Anh.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Trung Ruồi.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Trung Ruồi.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\VIệt Anh.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\VIệt Anh.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\feedback\\Đình Tú.png",
+      "PackagePath": "staticwebassets\\images\\feedback\\Đình Tú.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\home\\CCShop.png",
+      "PackagePath": "staticwebassets\\images\\home\\CCShop.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\home\\CyberCoreShop.png",
+      "PackagePath": "staticwebassets\\images\\home\\CyberCoreShop.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\home\\bg_border.png",
+      "PackagePath": "staticwebassets\\images\\home\\bg_border.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\home\\new.png",
+      "PackagePath": "staticwebassets\\images\\home\\new.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\home\\sale.png",
+      "PackagePath": "staticwebassets\\images\\home\\sale.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\home\\searchicon.png",
+      "PackagePath": "staticwebassets\\images\\home\\searchicon.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\product-details\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\product-details\\new.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\new.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\product-details\\rating.png",
+      "PackagePath": "staticwebassets\\images\\product-details\\rating.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\product-details\\share.png",
+      "PackagePath": "staticwebassets\\images\\product-details\\share.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\product-details\\similar1.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\similar1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\product-details\\similar2.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\similar2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\product-details\\similar3.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\similar3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\AirPods Pro 2.png",
+      "PackagePath": "staticwebassets\\images\\products\\AirPods Pro 2.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\Apple Pencil Pro.png",
+      "PackagePath": "staticwebassets\\images\\products\\Apple Pencil Pro.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\Apple Watch SE 2023.png",
+      "PackagePath": "staticwebassets\\images\\products\\Apple Watch SE 2023.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\Apple Watch SE.png",
+      "PackagePath": "staticwebassets\\images\\products\\Apple Watch SE.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\Apple Watch Series 9.png",
+      "PackagePath": "staticwebassets\\images\\products\\Apple Watch Series 9.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\Apple Watch Ultra 2.png",
+      "PackagePath": "staticwebassets\\images\\products\\Apple Watch Ultra 2.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\MacBook Air M1.png",
+      "PackagePath": "staticwebassets\\images\\products\\MacBook Air M1.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\Macbook Air M2.png",
+      "PackagePath": "staticwebassets\\images\\products\\Macbook Air M2.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\Macbook Pro 16 M1.png",
+      "PackagePath": "staticwebassets\\images\\products\\Macbook Pro 16 M1.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\Magic Mouse 2.png",
+      "PackagePath": "staticwebassets\\images\\products\\Magic Mouse 2.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\Sạc 20W USB-C Power Adapter.png",
+      "PackagePath": "staticwebassets\\images\\products\\Sạc 20W USB-C Power Adapter.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\iMac M1 2021.png",
+      "PackagePath": "staticwebassets\\images\\products\\iMac M1 2021.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\ipad air m2.png",
+      "PackagePath": "staticwebassets\\images\\products\\ipad air m2.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\ipad gen 10.png",
+      "PackagePath": "staticwebassets\\images\\products\\ipad gen 10.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\ipad gen 9.png",
+      "PackagePath": "staticwebassets\\images\\products\\ipad gen 9.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\ipad pro m4.png",
+      "PackagePath": "staticwebassets\\images\\products\\ipad pro m4.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\iphone 13.png",
+      "PackagePath": "staticwebassets\\images\\products\\iphone 13.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\iphone 15 plus.png",
+      "PackagePath": "staticwebassets\\images\\products\\iphone 15 plus.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\iphone 15 pro max.png",
+      "PackagePath": "staticwebassets\\images\\products\\iphone 15 pro max.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\iphone 15.png",
+      "PackagePath": "staticwebassets\\images\\products\\iphone 15.png"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\iphone-14-promax.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\iphone-14-promax.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\products\\samsung-galaxy-s23fe.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\samsung-galaxy-s23fe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\shop\\advertisement.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\advertisement.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\shop\\product10.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\shop\\product11.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\shop\\product12.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\shop\\product7.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\shop\\product8.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\shop\\product9.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\images\\thumb\\shop_iphone_light__b2toggskllle_large_2.svg",
+      "PackagePath": "staticwebassets\\images\\thumb\\shop_iphone_light__b2toggskllle_large_2.svg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\js\\contact.js",
+      "PackagePath": "staticwebassets\\js\\contact.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\js\\gmaps.js",
+      "PackagePath": "staticwebassets\\js\\gmaps.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\js\\html5shiv.js",
+      "PackagePath": "staticwebassets\\js\\html5shiv.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\js\\jquery.prettyPhoto.js",
+      "PackagePath": "staticwebassets\\js\\jquery.prettyPhoto.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\js\\jquery.scrollUp.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.scrollUp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\js\\price-range.js",
+      "PackagePath": "staticwebassets\\js\\price-range.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Agile_Ecommerce\\Agile_Ecommerce\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Agile_Ecommerce.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Agile_Ecommerce.props",
+      "PackagePath": "build\\Agile_Ecommerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Agile_Ecommerce.props",
+      "PackagePath": "buildMultiTargeting\\Agile_Ecommerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Agile_Ecommerce.props",
+      "PackagePath": "buildTransitive\\Agile_Ecommerce.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

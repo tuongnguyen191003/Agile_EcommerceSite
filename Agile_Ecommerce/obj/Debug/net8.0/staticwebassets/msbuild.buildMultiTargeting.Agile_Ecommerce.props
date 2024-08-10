@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Agile_Ecommerce.props" />
+</Project>
