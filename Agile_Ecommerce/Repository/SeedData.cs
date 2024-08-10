@@ -44,7 +44,7 @@ namespace Agile_Ecommerce.Repository
 						Name = "iPhone 14 Promax",
 						Slug = "iphone-14-promax",
 						Description = "iphone 14 pro max với hiệu năng mạnh mẽ vượt trội",
-						Image = "images/products/iphone-14-promax.jpg",
+						Image = "iphone-14-promax.jpg",
 						Category = iPhone, Brand = apple,
 						Price = 1200
 					},
@@ -53,7 +53,7 @@ namespace Agile_Ecommerce.Repository
 						Name = "Samsung Galaxy S23 FE 5G 8GB 128GB",
 						Slug = "samsung-galaxy-s23-fe",
 						Description = "Samsung S23 FE sở hữu màn hình Dynamic AMOLED 2X 6.4 inch, tần số quét 120Hz đi cùng chip Exynos 2200 8 nhân tạo độ mượt mà, thoải mái khi sử dụng. Bên cạnh đó, với mức pin 4.500 mAh, giúp người dùng có thể tha hồ đọc báo, lướt web cả ngày dài, kết hợp sạc nhanh 25W, tiết kiệm thời gian sạc. ",
-						Image = "images/products/samsung-galaxy-s23fe.jpg",
+						Image = "samsung-galaxy-s23fe.jpg",
 						Category = Galaxy,
 						Brand = samsung,
 						Price = 1200
