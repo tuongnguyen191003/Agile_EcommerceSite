@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\models\\viewmodels\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\models\\viewmodels\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\models\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\models\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\models\\viewmodels\\categoryproductsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\models\\viewmodels\\categoryproductsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\models\\cartitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\models\\cartitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -78,10 +106,6 @@
       "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -114,14 +138,6 @@
       "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\controllers\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\agile_ecommerce\\agile_ecommerce\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5554F95F-A75A-4EB5-8225-EAC02A0086F8}|Agile_Ecommerce\\Agile_Ecommerce.csproj|solutionrelative:agile_ecommerce\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -133,24 +149,107 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Brand\\Index.cshtml",
-              "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Brand\\Index.cshtml",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Brand\\Index.cshtml",
-              "RelativeToolTip": "Agile_Ecommerce\\Views\\Brand\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-10T08:57:25.092Z",
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Models\\ViewModels\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "Agile_Ecommerce\\Models\\ViewModels\\ProductViewModel.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Models\\ViewModels\\ProductViewModel.cs",
+              "RelativeToolTip": "Agile_Ecommerce\\Models\\ViewModels\\ProductViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T09:44:42.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryProductsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Models\\ViewModels\\CategoryProductsViewModel.cs",
+              "RelativeDocumentMoniker": "Agile_Ecommerce\\Models\\ViewModels\\CategoryProductsViewModel.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Models\\ViewModels\\CategoryProductsViewModel.cs",
+              "RelativeToolTip": "Agile_Ecommerce\\Models\\ViewModels\\CategoryProductsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T09:44:38.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartItemViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Models\\ViewModels\\CartItemViewModel.cs",
+              "RelativeDocumentMoniker": "Agile_Ecommerce\\Models\\ViewModels\\CartItemViewModel.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Models\\ViewModels\\CartItemViewModel.cs",
+              "RelativeToolTip": "Agile_Ecommerce\\Models\\ViewModels\\CartItemViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T09:44:31.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CartItemModel.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Models\\CartItemModel.cs",
+              "RelativeDocumentMoniker": "Agile_Ecommerce\\Models\\CartItemModel.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Models\\CartItemModel.cs",
+              "RelativeToolTip": "Agile_Ecommerce\\Models\\CartItemModel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAIBAwA0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T09:39:30.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Agile_Ecommerce\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Agile_Ecommerce\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T06:21:35.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Program.cs",
+              "RelativeDocumentMoniker": "Agile_Ecommerce\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Program.cs",
+              "RelativeToolTip": "Agile_Ecommerce\\Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAYwA4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T06:59:21.889Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Agile_Ecommerce\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAAEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-10T06:23:29.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "dbo.Products [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/MSITHINGF63_TUONGNM/Agile_Ecommerce/True/SqlTable/dbo.Products.sql",
+              "ToolTip": "dbo.Products [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-10T07:27:42.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Home\\Index.cshtml",
@@ -158,35 +257,35 @@
               "RelativeToolTip": "Agile_Ecommerce\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-10T06:10:17.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T06:10:17.925Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "dbo.Products [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/MSITHINGF63_TUONGNM/Agile_Ecommerce/True/SqlTable/dbo.Products.sql",
-              "ToolTip": "dbo.Products [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-10T07:27:42.904Z",
-              "EditorCaption": ""
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Brand\\Index.cshtml",
+              "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Brand\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Brand\\Index.cshtml",
+              "RelativeToolTip": "Agile_Ecommerce\\Views\\Brand\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-10T08:57:25.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Product\\Details.cshtml",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Product\\Details.cshtml",
               "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Product\\Details.cshtml",
               "RelativeToolTip": "Agile_Ecommerce\\Views\\Product\\Details.cshtml",
-              "ViewState": "AQIAADsAAAAAAAAAAAAAAFUAAAAJAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAzwFUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-10T06:26:15.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T06:26:15.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Controllers\\ProductController.cs",
@@ -194,12 +293,11 @@
               "RelativeToolTip": "Agile_Ecommerce\\Controllers\\ProductController.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAxwBIAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T06:21:19.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T06:21:19.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Controllers\\HomeController.cs",
@@ -207,12 +305,11 @@
               "RelativeToolTip": "Agile_Ecommerce\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T08:18:44.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T08:18:44.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Category\\Index.cshtml",
@@ -220,12 +317,11 @@
               "RelativeToolTip": "Agile_Ecommerce\\Views\\Category\\Index.cshtml",
               "ViewState": "AQIAAAgAAAAAAAAAAAAYwBcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-10T06:23:42.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T06:23:42.614Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Controllers\\CategoryController.cs",
@@ -233,12 +329,11 @@
               "RelativeToolTip": "Agile_Ecommerce\\Controllers\\CategoryController.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAADwvwwAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T06:21:02.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T06:21:02.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "BrandController.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Controllers\\BrandController.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Controllers\\BrandController.cs",
@@ -246,12 +341,11 @@
               "RelativeToolTip": "Agile_Ecommerce\\Controllers\\BrandController.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAADwvw4AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T08:55:33.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T08:55:33.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Shared\\Components\\Categories\\Default.cshtml",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Shared\\Components\\Categories\\Default.cshtml",
@@ -259,12 +353,11 @@
               "RelativeToolTip": "Agile_Ecommerce\\Views\\Shared\\Components\\Categories\\Default.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-10T08:45:48.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T08:45:48.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "SeedData.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Repository\\SeedData.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Repository\\SeedData.cs",
@@ -272,12 +365,11 @@
               "RelativeToolTip": "Agile_Ecommerce\\Repository\\SeedData.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAuwDcAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T07:10:43.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T07:10:43.649Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "DataContext.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Repository\\DataContext.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Repository\\DataContext.cs",
@@ -285,12 +377,11 @@
               "RelativeToolTip": "Agile_Ecommerce\\Repository\\DataContext.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAA2wBAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T06:50:27.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T06:50:27.689Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Shared\\Components\\Brands\\Default.cshtml",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Shared\\Components\\Brands\\Default.cshtml",
@@ -302,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Product\\Index.cshtml",
@@ -310,12 +401,11 @@
               "RelativeToolTip": "Agile_Ecommerce\\Views\\Product\\Index.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAADwvwUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-10T06:25:54.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T06:25:54.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Shared\\_Layout.cshtml",
@@ -323,12 +413,11 @@
               "RelativeToolTip": "Agile_Ecommerce\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAOMAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-10T05:59:03.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T05:59:03.173Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "CategoriesViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Repository\\Components\\CategoriesViewComponent.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Repository\\Components\\CategoriesViewComponent.cs",
@@ -340,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "_SidebarPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Shared\\_SidebarPartial.cshtml",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Shared\\_SidebarPartial.cshtml",
@@ -352,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "BrandsViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Repository\\Components\\BrandsViewComponent.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Repository\\Components\\BrandsViewComponent.cs",
@@ -364,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\_ViewImports.cshtml",
@@ -376,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Models\\ErrorViewModel.cs",
@@ -388,19 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Program.cs",
-              "RelativeDocumentMoniker": "Agile_Ecommerce\\Program.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Program.cs",
-              "RelativeToolTip": "Agile_Ecommerce\\Program.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAYwCMAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T06:59:21.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\appsettings.json",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\appsettings.json",
@@ -412,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "ProductModel.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Models\\ProductModel.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Models\\ProductModel.cs",
@@ -425,18 +502,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Agile_Ecommerce\\Controllers\\CartController.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Agile_Ecommerce\\Controllers\\CartController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T06:21:35.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
               "Title": "BrandModel.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Models\\BrandModel.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Models\\BrandModel.cs",
@@ -448,19 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Cart\\Index.cshtml",
-              "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Cart\\Index.cshtml",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Cart\\Index.cshtml",
-              "RelativeToolTip": "Agile_Ecommerce\\Views\\Cart\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-10T06:23:29.434Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "CategoryModel.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Models\\CategoryModel.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Models\\CategoryModel.cs",
@@ -472,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "_NotificationPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\_NotificationPartial.cshtml",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\_NotificationPartial.cshtml",
@@ -484,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "Checkout.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Controllers\\Checkout.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Controllers\\Checkout.cs",
@@ -496,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Views\\Checkout\\Index.cshtml",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Views\\Checkout\\Index.cshtml",
@@ -508,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\Agile_Ecommerce\\Agile_Ecommerce\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Agile_Ecommerce\\Controllers\\LoginController.cs",
