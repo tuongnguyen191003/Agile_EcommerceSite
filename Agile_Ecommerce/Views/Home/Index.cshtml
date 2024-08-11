@@ -2,6 +2,11 @@
 <div class="col-sm-3">
 	@Html.Partial("_SidebarPartial")
 </div>
+<style>
+	.product-image-wrapper {
+		height: 450px;
+	}
+</style>
 <div class="col-sm-9 padding-right">
 	<div class="features_items">
 		<!--features_items-->
@@ -14,7 +19,7 @@
 						<div class="single-products">
 						<a asp-controller="Product" asp-action="Details" asp-route-Id="@item.Id">
 							<div class="productinfo text-center">
-								<img src="~/images/products/@item.Image" alt="@item.Name"  />
+								<img src="~/media/products/@item.Image" alt="@item.Name"  />
 							</div>
 							<div class="productinfo text-center">
 								<h2>@item.Price</h2>
