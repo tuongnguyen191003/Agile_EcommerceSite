@@ -1,5 +1,6 @@
 ﻿using Agile_Ecommerce.Models;
 using Agile_Ecommerce.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShoppingOnline.Models;
@@ -8,6 +9,7 @@ using ShoppingOnline.Repository;
 namespace ShoppingOnline.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class BrandController : Controller
     {
         private readonly DataContext _dataContext;
