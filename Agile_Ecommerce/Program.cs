@@ -1,5 +1,8 @@
+﻿using Agile_Ecommerce.Models;
 using Agile_Ecommerce.Repository;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +20,34 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+builder.Services.AddIdentity<AppUserModel, IdentityRole>(/*options => options.SignIn.RequireConfirmedAccount = true*/ /*xác thực account*/)
+	.AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+	// Password settings.
+	options.Password.RequireDigit = true; //kiểu số
+	options.Password.RequireLowercase = true; //chữ thường
+	options.Password.RequireNonAlphanumeric = true; //kí tự đặc biệt
+	options.Password.RequireUppercase = true; //chữ hoa
+	options.Password.RequiredLength = 6; //độ dài là 6
+	/*options.Password.RequiredUniqueChars = 1;*/ //yêu cầu 1 ký tự đặc biệt
+
+	// Lockout settings.
+	//options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+	options.Lockout.MaxFailedAccessAttempts = 5; //cho phép truy cập tối đa 5 lần
+	//options.Lockout.AllowedForNewUsers = true;
+
+	// User settings.
+	//options.User.AllowedUserNameCharacters =
+	//"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+	//options.User.RequireUniqueEmail = false;
+});
+
 var app = builder.Build();
+
+//Trang 404 Not Found
+app.UseStatusCodePagesWithRedirects("/Home/Error?statuscode={0}");
 
 app.UseSession();
 
@@ -33,8 +63,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
-app.UseAuthorization();
+app.UseAuthentication(); //xác thực
+ 
+app.UseAuthorization(); //xác thực quyền
 
 app.MapControllerRoute(
     name: "Areas",
