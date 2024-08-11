@@ -1,5 +1,6 @@
 ﻿using Agile_Ecommerce.Models;
 using Agile_Ecommerce.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Routing.Template;
@@ -9,7 +10,7 @@ namespace ShoppingOnline.Areas.Admin.Controllers
 {
     [Area("Admin")]
     //[Route("Admin/Product")]
-    //[Authorize]
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly DataContext _dataContext;
