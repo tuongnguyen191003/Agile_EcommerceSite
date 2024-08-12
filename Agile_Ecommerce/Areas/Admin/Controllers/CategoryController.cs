@@ -9,7 +9,8 @@ using Microsoft.EntityFrameworkCore;
 namespace Agile_Ecommerce.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
+    [Route("Admin/Category")]
+    [Authorize(Roles = "Publicsher, Author")]
     public class CategoryController : Controller
     {
         private readonly DataContext _dataContext;

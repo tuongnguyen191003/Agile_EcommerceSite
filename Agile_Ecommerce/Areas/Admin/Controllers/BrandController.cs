@@ -9,7 +9,7 @@ using ShoppingOnline.Repository;
 namespace ShoppingOnline.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
+    [Authorize(Roles = "Publisher")]
     public class BrandController : Controller
     {
         private readonly DataContext _dataContext;
