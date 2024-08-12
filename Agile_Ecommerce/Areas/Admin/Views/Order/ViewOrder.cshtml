@@ -1,0 +1,53 @@
+﻿@using Agile_Ecommerce.Models
+@model OrderModel
+@{
+    ViewData["title"] = "Order Details";
+}
+
+<h3>Order Details</h3>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Order Code:</dt>
+        <dd class="col-sm-10">@Model.OrderCode</dd>
+
+        <dt class="col-sm-2">Username:</dt>
+        <dd class="col-sm-10">@Model.UserName</dd>
+
+        <dt class="col-sm-2">Order Date:</dt>
+        <dd class="col-sm-10">@Model.CreatedDate</dd>
+
+        <dt class="col-sm-2">Order Status:</dt>
+        <dd class="col-sm-10">
+            @if (Model.Status == 1)
+            {
+                <span class="text text-success">New Order</span>
+            }
+            else
+            {
+                <span class="text text-danger">Ordered Successfully!</span>
+            }
+        </dd>
+    </dl>
+</div>
+
+<h4>Order Items</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderDetails)
+        {
+            <tr>
+                <td>@item.Product.Name</td>
+                <td>@item.Price</td>
+                <td>@item.Quantity</td>
+            </tr>
+        }
+    </tbody>
+</table>
