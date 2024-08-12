@@ -20,6 +20,20 @@ namespace ShoppingOnline.Controllers
 			return View(new LoginViewModel { ReturnUrl = returnUrl});
 		}
 		[HttpPost]
+		//public async Task<IActionResult> Login(LoginViewModel loginVM)
+		//{
+		//	if (ModelState.IsValid)
+		//	{
+		//		Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(loginVM.Username, loginVM.Password, false, false);
+		//		if (result.Succeeded)
+		//		{
+		//			return RedirectToAction(loginVM.ReturnUrl ?? "");
+		//		}
+		//		ModelState.AddModelError("", "Invalid Username or Password");
+		//	}
+		//	return View(loginVM);	
+		//}
+
 		public async Task<IActionResult> Login(LoginViewModel loginVM)
 		{
 			if (ModelState.IsValid)
@@ -27,11 +41,18 @@ namespace ShoppingOnline.Controllers
 				Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(loginVM.Username, loginVM.Password, false, false);
 				if (result.Succeeded)
 				{
-					return RedirectToAction(loginVM.ReturnUrl ?? "/");
+					if (Url.IsLocalUrl(loginVM.ReturnUrl))
+					{
+						return Redirect(loginVM.ReturnUrl);
+					}
+					else
+					{
+						return RedirectToAction("Index", "Home");
+					}
 				}
 				ModelState.AddModelError("", "Invalid Username or Password");
 			}
-			return View(loginVM);	
+			return View(loginVM);
 		}
 
 
@@ -52,20 +73,20 @@ namespace ShoppingOnline.Controllers
 					TempData["success"] = "Đăng ký tài khoản thành công!";
 					return Redirect("/account/login");
 				}
-				//foreach (IdentityError error in result.Errors)
-				//{
-				//	ModelState.AddModelError("", error.Description);
-				//}
-				
+				foreach (IdentityError error in result.Errors)
+				{
+					ModelState.AddModelError("", error.Description);
+				}
+
 			}
 
 			return View(user);
 		}
 
-		public async Task<IActionResult> Logout(string returnUrl = "/")
+		public async Task<IActionResult> Logout(string returnUrl = "")
 		{
 			await _signInManager.SignOutAsync();
-			return RedirectToAction(returnUrl);
+			return RedirectToAction("Index", "Home");
 		}
 	}
 }

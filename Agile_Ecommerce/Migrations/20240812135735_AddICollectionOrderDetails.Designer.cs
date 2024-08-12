@@ -4,6 +4,7 @@ using Agile_Ecommerce.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Agile_Ecommerce.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20240812135735_AddICollectionOrderDetails")]
+    partial class AddICollectionOrderDetails
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -152,7 +155,7 @@ namespace Agile_Ecommerce.Migrations
                     b.Property<string>("OrderCode")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("OrderModelId")
+                    b.Property<int?>("OrderModelId")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Price")
@@ -376,19 +379,15 @@ namespace Agile_Ecommerce.Migrations
 
             modelBuilder.Entity("Agile_Ecommerce.Models.OrderDetails", b =>
                 {
-                    b.HasOne("Agile_Ecommerce.Models.OrderModel", "Order")
+                    b.HasOne("Agile_Ecommerce.Models.OrderModel", null)
                         .WithMany("OrderDetails")
-                        .HasForeignKey("OrderModelId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("OrderModelId");
 
                     b.HasOne("Agile_Ecommerce.Models.ProductModel", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Order");
 
                     b.Navigation("Product");
                 });
