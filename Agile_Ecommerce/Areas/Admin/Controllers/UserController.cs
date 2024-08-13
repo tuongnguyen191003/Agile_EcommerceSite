@@ -13,8 +13,8 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Agile_Ecommerce.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    //[Route("Admin/User")]
-    [Authorize(Roles ="Admin")]
+    [Route("Admin/User")]
+    [Authorize]
     public class UserController : Controller
     {
         private readonly DataContext _dataContext;
@@ -27,19 +27,19 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
             _roleManager = roleManager;
         }
         [HttpGet]
-        //[Route("Index")]
+        [Route("Index")]
         public async Task<IActionResult> Index()
         {
             var userWithRoles = await (from u in _dataContext.Users
                                        join ur in _dataContext.UserRoles on u.Id equals ur.UserId
                                        join r in _dataContext.Roles on ur.RoleId equals r.Id
-                                       select new {User = u, RoleName = r.Name})
+                                       select new { User = u, RoleName = r.Name })
                                        .ToListAsync();
             //return View(await _userManager.Users.OrderByDescending(p => p.Id).ToListAsync());
             return View(userWithRoles);
         }
         [HttpGet]
-        //[Route("Create")]
+        [Route("Create")]
         public async Task<IActionResult> Create()
         {
             var roles = await _roleManager.Roles.ToListAsync();
@@ -48,10 +48,10 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //[Route("Create")]
+        [Route("Create")]
         public async Task<IActionResult> Create(AppUserModel user)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var createUserResult = await _userManager.CreateAsync(user, user.PasswordHash); //tạo user
                 if (createUserResult.Succeeded)
@@ -68,12 +68,14 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
                         }
                     }
                     return RedirectToAction("Index", "User");
-                } else
+                }
+                else
                 {
                     AddIdentityErrors(createUserResult);
                     return View(user);
                 }
-            } else
+            }
+            else
             {
                 TempData["error"] = "Model đang có một vài vấn đề";
                 List<string> errors = new List<string>();
@@ -102,10 +104,10 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
 
         [HttpPost]
         [HttpGet]
-        //[Route("Delete")]
+        [Route("Delete")]
         public async Task<IActionResult> Delete(string id)
         {
-            if(string.IsNullOrEmpty(id))
+            if (string.IsNullOrEmpty(id))
             {
                 return NotFound();
             }
@@ -124,7 +126,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        //[Route("Edit")]
+        [Route("Edit")]
         public async Task<IActionResult> Edit(string id)
         {
             if (string.IsNullOrEmpty(id))
@@ -144,7 +146,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //[Route("Edit")]
+        [Route("Edit")]
         public async Task<IActionResult> Edit(string id, AppUserModel user)
         {
             var existingUser = await _userManager.FindByIdAsync(id); //lấy user dựa vào id

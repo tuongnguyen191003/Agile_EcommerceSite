@@ -31,7 +31,7 @@ namespace ShoppingOnline.Controllers
 		//		}
 		//		ModelState.AddModelError("", "Invalid Username or Password");
 		//	}
-		//	return View(loginVM);	
+		//	return View(loginVM);
 		//}
 
 		public async Task<IActionResult> Login(LoginViewModel loginVM)
@@ -64,7 +64,7 @@ namespace ShoppingOnline.Controllers
 		[ValidateAntiForgeryToken]
 		public async Task<IActionResult> Create(UserModel user)
 		{
-			if(ModelState.IsValid)
+			if (ModelState.IsValid)
 			{
 				AppUserModel newUser = new AppUserModel { UserName = user.Username, Email = user.Email };
 				IdentityResult result = await _userManage.CreateAsync(newUser, user.Password);

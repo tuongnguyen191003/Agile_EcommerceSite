@@ -10,7 +10,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/Category")]
-    [Authorize(Roles = "Publicsher, Author")]
+    [Authorize]
     public class CategoryController : Controller
     {
         private readonly DataContext _dataContext;
@@ -23,7 +23,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
         //    return View(await _dataContext.Categories.OrderByDescending(p => p.Id).ToListAsync());
         //}
 
-        //[Route("Index")]
+        [Route("Index")]
         public async Task<IActionResult> Index(int pg = 1)
         {
             List<CategoryModel> category = _dataContext.Categories.ToList(); //33 datas
@@ -51,14 +51,15 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create()
+		[Route("Create")]
+		public IActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(CategoryModel category)
+		public async Task<IActionResult> Create(CategoryModel category)
         {
             if (ModelState.IsValid)
             {
@@ -93,6 +94,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
             return View(category);
         }
 
+        [Route("Edit")]
         public async Task<IActionResult> Edit(int Id)
         {
             CategoryModel category = await _dataContext.Categories.FindAsync(Id);
@@ -101,7 +103,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(CategoryModel category)
+		public async Task<IActionResult> Edit(CategoryModel category)
         {
             var existed_categories = _dataContext.Categories.Find(category.Id);
 
@@ -153,8 +155,8 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
             }
             return View(existed_categories);
         }
-
-        public async Task<IActionResult> Delete(int Id)
+		
+		public async Task<IActionResult> Delete(int Id)
         {
             CategoryModel category = await _dataContext.Categories.FindAsync(Id);
             if (category == null)

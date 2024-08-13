@@ -3,13 +3,13 @@ using Agile_Ecommerce.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ShoppingOnline.Models;
-using ShoppingOnline.Repository;
 
-namespace ShoppingOnline.Areas.Admin.Controllers
+
+namespace Agile_Ecommerce.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Publisher")]
+    [Route("Admin/Brand")]
+    [Authorize]
     public class BrandController : Controller
     {
         private readonly DataContext _dataContext;
@@ -17,17 +17,21 @@ namespace ShoppingOnline.Areas.Admin.Controllers
         {
             _dataContext = context;
         }
+        [Route("Index")]
         public async Task<IActionResult> Index()
         {
             return View(await _dataContext.Brands.OrderByDescending(p => p.Id).ToListAsync());
         }
 
-        public IActionResult Create()
+		[Route("Create")]
+		public IActionResult Create()
         {
             return View();
         }
+
         [HttpPost]
-        [ValidateAntiForgeryToken]
+		[Route("Create")]
+		[ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(BrandModel brand)
         {
             if (ModelState.IsValid)
@@ -64,6 +68,7 @@ namespace ShoppingOnline.Areas.Admin.Controllers
             return View(brand);
         }
 
+        [Route("Edit")]
         public async Task<IActionResult> Edit(int Id)
         {
             BrandModel brand = await _dataContext.Brands.FindAsync(Id);
@@ -72,7 +77,8 @@ namespace ShoppingOnline.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(BrandModel brand)
+		[Route("Edit")]
+		public async Task<IActionResult> Edit(BrandModel brand)
         {
             var existed_brand = _dataContext.Brands.Find(brand.Id);
 
@@ -124,8 +130,8 @@ namespace ShoppingOnline.Areas.Admin.Controllers
             }
             return View(existed_brand);
         }
-
-        public async Task<IActionResult> Delete(int Id)
+		[Route("Delete")]
+		public async Task<IActionResult> Delete(int Id)
         {
             BrandModel brand = await _dataContext.Brands.FindAsync(Id);
             if (brand == null)
