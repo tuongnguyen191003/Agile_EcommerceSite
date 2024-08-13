@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\nguye\OneDrive\Máy tính\Agile_Ecommerce\Agile_Ecommerce
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/nguye/OneDrive/Máy tính/Agile_Ecommerce/Agile_Ecommerce/Areas/Admin/Views/AppRoles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXBwUm9sZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguye/OneDrive/Máy tính/Agile_Ecommerce/Agile_Ecommerce/Areas/Admin/Views/AppRoles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXBwUm9sZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguye/OneDrive/Máy tính/Agile_Ecommerce/Agile_Ecommerce/Areas/Admin/Views/AppRoles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXBwUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/nguye/OneDrive/Máy tính/Agile_Ecommerce/Agile_Ecommerce/Areas/Admin/Views/Brand/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -10,7 +10,7 @@ namespace ShoppingOnline.Areas.Admin.Controllers
 {
     [Area("Admin")]
     //[Route("Admin/Product")]
-    [Authorize(Roles ="Admin")]
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly DataContext _dataContext;
