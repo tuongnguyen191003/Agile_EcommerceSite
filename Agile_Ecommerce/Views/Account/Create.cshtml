@@ -2,12 +2,13 @@
 @model UserModel
 @{
 	ViewData["Title"] = "Register";
+	Layout = "_Login";
 }
 
 
 <section id="">
 	<!--form-->
-	<div class="container>
+	<div class="container">
 		<div class="col-sm-8 col-sm-offset-1">
 				<div class="signup-form">
 					<!--sign up form-->
@@ -26,11 +27,23 @@
 							<span asp-validation-for="Email" class="text-danger" />
 						</div>
 
+					<div class="form-group">
+						<label>Phone Number</label>
+						<input asp-for="PhoneNumber" class="form-control" />
+						<span asp-validation-for="PhoneNumber" class="text-danger" />
+					</div>
+
 						<div class="form-group">
 							<label>Password</label>
 							<input asp-for="Password" class="form-control" />
 							<span asp-validation-for="Password" class="text-danger" />
 						</div>
+
+					<div class="form-group">
+						<label>Confirm Password</label>
+						<input asp-for="ConfirmPassword" class="form-control" />
+						<span asp-validation-for="ConfirmPassword" class="text-danger" />
+					</div>
 
 						@* <span>
 						<input type="checkbox" class="checkbox">

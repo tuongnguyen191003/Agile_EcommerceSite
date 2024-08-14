@@ -14,7 +14,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/User")]
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class UserController : Controller
     {
         private readonly DataContext _dataContext;
@@ -67,7 +67,8 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
                             ModelState.AddModelError(string.Empty, error.Description);
                         }
                     }
-                    return RedirectToAction("Index", "User");
+					TempData["success"] = "Create user successfully";
+					return RedirectToAction("Index", "User");
                 }
                 else
                 {

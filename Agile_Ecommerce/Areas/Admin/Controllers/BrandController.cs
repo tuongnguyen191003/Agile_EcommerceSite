@@ -9,7 +9,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/Brand")]
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class BrandController : Controller
     {
         private readonly DataContext _dataContext;
@@ -18,12 +18,33 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
             _dataContext = context;
         }
         [Route("Index")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int pg = 1)
         {
-            return View(await _dataContext.Brands.OrderByDescending(p => p.Id).ToListAsync());
+            List<BrandModel> category = _dataContext.Brands.ToList(); //33 datas
+
+
+            const int pageSize = 10; //10 items/trang
+
+            if (pg < 1) //page < 1;
+            {
+                pg = 1; //page ==1
+            }
+            int recsCount = category.Count(); //33 items;
+
+            var pager = new Paginate(recsCount, pg, pageSize);
+
+            int recSkip = (pg - 1) * pageSize; //(3 - 1) * 10; 
+
+            //category.Skip(20).Take(10).ToList()
+
+            var data = category.Skip(recSkip).Take(pager.PageSize).ToList();
+
+            ViewBag.Pager = pager;
+
+            return View(data);
         }
 
-		[Route("Create")]
+        [Route("Create")]
 		public IActionResult Create()
         {
             return View();
@@ -68,48 +89,60 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
             return View(brand);
         }
 
-        [Route("Edit")]
+        [Route("Edit/{Id}")] // thêm Id vào route
         public async Task<IActionResult> Edit(int Id)
         {
-            BrandModel brand = await _dataContext.Brands.FindAsync(Id);
+            BrandModel brand  = await _dataContext.Brands.FindAsync(Id);
+            if (brand == null) // Kiểm tra xem brand có tồn tại hay không
+            {
+                return NotFound();
+            }
             return View(brand);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-		[Route("Edit")]
-		public async Task<IActionResult> Edit(BrandModel brand)
+        [Route("Edit/{Id}")] // thêm Id vào route
+        public async Task<IActionResult> Edit(int Id, BrandModel brand)
         {
-            var existed_brand = _dataContext.Brands.Find(brand.Id);
+            // Tìm brand trong database dựa vào Id
+            var existedBrand = await _dataContext.Brands.FindAsync(Id);
 
+            if (existedBrand == null) // Kiểm tra xem brand có tồn tại hay không
+            {
+                return NotFound(); // Trả về trang 404 nếu không tìm thấy
+            }
+
+            // Kiểm tra model state
             if (ModelState.IsValid)
             {
-                //code thêm dữ liệu
-                existed_brand.Slug = brand.Name.Replace(" ", "-");
-                existed_brand.Description = brand.Description.Replace("<p>", "").Replace("</p>", "").Replace("<br>", "\n");
-                var slug = await _dataContext.Brands.FirstOrDefaultAsync(p => p.Slug == brand.Slug);
+                // Tạo slug mới từ name
+                brand.Slug = brand.Name.Replace(" ", "-");
+
+                // Kiểm tra slug có trùng với slug hiện tại hay không
+                var slug = await _dataContext.Brands.FirstOrDefaultAsync(p => p.Slug == brand.Slug && p.Id != Id);
 
                 if (slug != null)
                 {
-                    ModelState.AddModelError("", "Brand exists already");
-                    return View(existed_brand);
+                    ModelState.AddModelError("", "Category exists already");
+                    return View(existedBrand);
                 }
 
-                // Kiểm tra thay đổi
-                if (existed_brand.Name == brand.Name &&
-                    existed_brand.Description == brand.Description &&
-                    existed_brand.Status == brand.Status)
+                // Kiểm tra xem có thay đổi nào không
+                if (existedBrand.Name == brand.Name &&
+                    existedBrand.Description == brand.Description &&
+                    existedBrand.Status == brand.Status)
                 {
-                    TempData["info"] = "Không có thay đổi nào được thực hiện.";
+                    TempData["success"] = "No changes were made.";
                     return RedirectToAction("Index");
                 }
 
-                // Cập nhật nếu có thay đổi
-                existed_brand.Name = brand.Name;
-                existed_brand.Description = brand.Description;
-                existed_brand.Status = brand.Status;
+                // Cập nhật thông tin category
+                existedBrand.Name = brand.Name;
+                existedBrand.Description = brand.Description;
+                existedBrand.Status = brand.Status;
 
-                _dataContext.Update(existed_brand);
+                _dataContext.Update(existedBrand);
                 await _dataContext.SaveChangesAsync();
                 TempData["success"] = "Update successfully";
                 return RedirectToAction("Index");
@@ -128,9 +161,9 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
                 string errorMessage = string.Join("\n", errors);
                 return BadRequest(errorMessage);
             }
-            return View(existed_brand);
+            return View(existedBrand);
         }
-		[Route("Delete")]
+        [Route("Delete")]
 		public async Task<IActionResult> Delete(int Id)
         {
             BrandModel brand = await _dataContext.Brands.FindAsync(Id);

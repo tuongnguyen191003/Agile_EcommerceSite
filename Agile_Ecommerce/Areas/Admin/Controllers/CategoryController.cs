@@ -10,7 +10,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/Category")]
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class CategoryController : Controller
     {
         private readonly DataContext _dataContext;
@@ -18,11 +18,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
         {
             _dataContext = context;
         }
-        //public async Task<IActionResult> Index()
-        //{
-        //    return View(await _dataContext.Categories.OrderByDescending(p => p.Id).ToListAsync());
-        //}
-
+        
         [Route("Index")]
         public async Task<IActionResult> Index(int pg = 1)
         {
@@ -59,22 +55,26 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-		public async Task<IActionResult> Create(CategoryModel category)
+        [Route("Create")]
+        public async Task<IActionResult> Create(CategoryModel category)
         {
-            if (ModelState.IsValid)
+           
+            if (ModelState.IsValid) //tình trạng model tốt
             {
                 //code thêm dữ liệu
                 category.Slug = category.Name.Replace(" ", "-");
+                category.Description = category.Description.Replace("<p>", "").Replace("</p>", "").Replace("<br>", "\n");
                 var slug = await _dataContext.Categories.FirstOrDefaultAsync(p => p.Slug == category.Slug);
                 if (slug != null)
                 {
-                    ModelState.AddModelError("", "Category exists already");
+                    ModelState.AddModelError("", "Product exists already");
                     return View(category);
                 }
+                
 
                 _dataContext.Add(category);
                 await _dataContext.SaveChangesAsync();
-                TempData["success"] = "Add successfully";
+                TempData["success"] = "Add Category successfully";
                 return RedirectToAction("Index");
             }
             else
@@ -91,50 +91,62 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
                 string errorMessage = string.Join("\n", errors);
                 return BadRequest(errorMessage);
             }
-            return View(category);
         }
 
-        [Route("Edit")]
+        [Route("Edit/{Id}")] // thêm Id vào route
         public async Task<IActionResult> Edit(int Id)
         {
             CategoryModel category = await _dataContext.Categories.FindAsync(Id);
+            if (category == null) // Kiểm tra xem category có tồn tại hay không
+            {
+                return NotFound();
+            }
             return View(category);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-		public async Task<IActionResult> Edit(CategoryModel category)
+        [Route("Edit/{Id}")] // thêm Id vào route
+        public async Task<IActionResult> Edit(int Id, CategoryModel category)
         {
-            var existed_categories = _dataContext.Categories.Find(category.Id);
+            // Tìm category trong database dựa vào Id
+            var existedCategory = await _dataContext.Categories.FindAsync(Id);
 
+            if (existedCategory == null) // Kiểm tra xem category có tồn tại hay không
+            {
+                return NotFound(); // Trả về trang 404 nếu không tìm thấy
+            }
+
+            // Kiểm tra model state
             if (ModelState.IsValid)
             {
-                //code thêm dữ liệu
+                // Tạo slug mới từ name
                 category.Slug = category.Name.Replace(" ", "-");
-                category.Description = category.Description.Replace("<p>", "").Replace("</p>", "").Replace("<br>", "\n");
-                var slug = await _dataContext.Categories.FirstOrDefaultAsync(p => p.Slug == category.Slug);
+
+                // Kiểm tra slug có trùng với slug hiện tại hay không
+                var slug = await _dataContext.Categories.FirstOrDefaultAsync(p => p.Slug == category.Slug && p.Id != Id);
 
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Category exists already");
-                    return View(existed_categories);
+                    return View(existedCategory);
                 }
 
-                // Kiểm tra thay đổi
-                if (existed_categories.Name == category.Name &&
-                    existed_categories.Description == category.Description &&
-                    existed_categories.Status == category.Status)
+                // Kiểm tra xem có thay đổi nào không
+                if (existedCategory.Name == category.Name &&
+                    existedCategory.Description == category.Description &&
+                    existedCategory.Status == category.Status)
                 {
-                    TempData["info"] = "Không có thay đổi nào được thực hiện.";
+                    TempData["success"] = "No changes were made.";
                     return RedirectToAction("Index");
                 }
 
-                // Cập nhật nếu có thay đổi
-                existed_categories.Name = category.Name;
-                existed_categories.Description = category.Description;
-                existed_categories.Status = category.Status;
+                // Cập nhật thông tin category
+                existedCategory.Name = category.Name;
+                existedCategory.Description = category.Description;
+                existedCategory.Status = category.Status;
 
-                _dataContext.Update(existed_categories);
+                _dataContext.Update(existedCategory);
                 await _dataContext.SaveChangesAsync();
                 TempData["success"] = "Update successfully";
                 return RedirectToAction("Index");
@@ -153,10 +165,9 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
                 string errorMessage = string.Join("\n", errors);
                 return BadRequest(errorMessage);
             }
-            return View(existed_categories);
+            return View(existedCategory);
         }
-		
-		public async Task<IActionResult> Delete(int Id)
+        public async Task<IActionResult> Delete(int Id)
         {
             CategoryModel category = await _dataContext.Categories.FindAsync(Id);
             if (category == null)

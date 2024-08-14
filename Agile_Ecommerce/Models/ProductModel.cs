@@ -40,7 +40,7 @@ namespace Agile_Ecommerce.Models
         [NotMapped]
         [FileExtension]
         //[Required(ErrorMessage = "Yêu cầu tải lên hình ảnh")]
-        public IFormFile ImageUpload { get; set; }
-
+        public IFormFile? ImageUpload { get; set; }
+       
     }
 }
