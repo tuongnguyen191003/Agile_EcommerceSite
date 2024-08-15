@@ -36,18 +36,51 @@ namespace ShoppingOnline.Controllers
 
 		public async Task<IActionResult> Login(LoginViewModel loginVM)
 		{
+			//if (ModelState.IsValid)
+			//{
+			//	Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(loginVM.Username, loginVM.Password, false, false);
+			//	if (result.Succeeded)
+			//	{
+			//		if (Url.IsLocalUrl(loginVM.ReturnUrl))
+			//		{
+			//			return Redirect(loginVM.ReturnUrl);
+			//		}
+			//		else
+			//		{
+			//			return RedirectToAction("Index", "Home");
+			//		}
+			//	}
+			//	ModelState.AddModelError("", "Invalid Username or Password");
+			//}
+
 			if (ModelState.IsValid)
 			{
 				Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(loginVM.Username, loginVM.Password, false, false);
 				if (result.Succeeded)
 				{
-					if (Url.IsLocalUrl(loginVM.ReturnUrl))
+					// Lấy thông tin user sau khi đăng nhập
+					var user = await _userManage.FindByNameAsync(loginVM.Username);
+
+					// Kiểm tra RoleId
+					if (user != null && user.RoleId == "Admin")
 					{
-						return Redirect(loginVM.ReturnUrl);
+						TempData["success"] = "Login Successfully, Wellcome Back!";
+						// Nếu RoleId là "Admin", chuyển đến trang Admin/Product/Index
+						return RedirectToAction("Index", "Product", new { area = "Admin" });
 					}
 					else
 					{
-						return RedirectToAction("Index", "Home");
+						// Nếu RoleId không phải "Admin", chuyển đến trang Home/Index
+						if (Url.IsLocalUrl(loginVM.ReturnUrl))
+						{
+							TempData["success"] = "Login Successfully, Wellcome Back!";
+							return Redirect(loginVM.ReturnUrl);
+						}
+						else
+						{
+							TempData["success"] = "Login Successfully, Wellcome Back!";
+							return RedirectToAction("Index", "Home");
+						}
 					}
 				}
 				ModelState.AddModelError("", "Invalid Username or Password");
@@ -66,7 +99,7 @@ namespace ShoppingOnline.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				AppUserModel newUser = new AppUserModel { UserName = user.Username, Email = user.Email };
+				AppUserModel newUser = new AppUserModel { UserName = user.Username, Email = user.Email, PhoneNumber = user.PhoneNumber };
 				IdentityResult result = await _userManage.CreateAsync(newUser, user.Password);
 				if (result.Succeeded)
 				{
@@ -78,6 +111,13 @@ namespace ShoppingOnline.Controllers
 					ModelState.AddModelError("", error.Description);
 				}
 
+				// Kiểm tra xác nhận mật khẩu
+				if (user.Password != user.ConfirmPassword)
+				{
+					ModelState.AddModelError("ConfirmPassword", "The password and confirmation password do not match.");
+					return View(user);
+				}
+
 			}
 
 			return View(user);
@@ -85,7 +125,9 @@ namespace ShoppingOnline.Controllers
 
 		public async Task<IActionResult> Logout(string returnUrl = "")
 		{
+			TempData["success"] = "See you again!";
 			await _signInManager.SignOutAsync();
+			
 			return RedirectToAction("Index", "Home");
 		}
 	}

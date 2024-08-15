@@ -46,7 +46,8 @@ namespace Agile_Ecommerce.Repository
 						Description = "iphone 14 pro max với hiệu năng mạnh mẽ vượt trội",
 						Image = "iphone-14-promax.jpg",
 						Category = iPhone, Brand = apple,
-						Price = 1200
+						Price = 1200,
+						
 					},
 					new ProductModel
 					{
@@ -56,8 +57,9 @@ namespace Agile_Ecommerce.Repository
 						Image = "samsung-galaxy-s23fe.jpg",
 						Category = Galaxy,
 						Brand = samsung,
-						Price = 1200
-					}
+						Price = 1200,
+                        
+                    }
 				);
 				_context.SaveChanges();
 

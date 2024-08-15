@@ -9,7 +9,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/Role")]
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class AppRolesController : Controller
     {
         private readonly DataContext _dataContext;

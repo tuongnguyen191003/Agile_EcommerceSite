@@ -15,5 +15,15 @@ namespace Agile_Ecommerce.Repository
 		public DbSet<CategoryModel> Categories { get; set; }
 		public DbSet<OrderModel> Orders { get; set; }
 		public DbSet<OrderDetails> OrderDetails { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Khai báo mối quan hệ giữa OrderModel và OrderDetails
+            modelBuilder.Entity<OrderModel>()
+                .HasMany(o => o.OrderDetails)
+                .WithOne(od => od.Order)
+                .HasForeignKey(od => od.OrderModelId);
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

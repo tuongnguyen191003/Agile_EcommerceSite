@@ -12,6 +12,7 @@ namespace Agile_Ecommerce.Controllers
 		{
 			_dataConext = context;
 		}
+
 		public async Task<IActionResult> Checkout()
 		{
 			var userEmail = User.FindFirstValue(ClaimTypes.Email);
@@ -27,23 +28,30 @@ namespace Agile_Ecommerce.Controllers
 				orderItem.UserName = userEmail;
 				orderItem.Status = 1;
 				orderItem.CreatedDate = DateTime.Now;
-				_dataConext.Add(orderItem);
-				_dataConext.SaveChanges();
-				//TempData["success"] = "Order created successfully!";
-				//return RedirectToAction("Index", "Cart");
+				orderItem.OrderDetails = new List<OrderDetails>(); // Khởi tạo OrderDetails
 
 				List<CartItemModel> cartItems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
 				foreach (var cart in cartItems)
 				{
-					var orderDetails = new OrderDetails();
-					orderDetails.UserName = userEmail;
-					orderDetails.OrderCode = orderCode;
-					orderDetails.ProductId = cart.ProductId;
-					orderDetails.Price = cart.Price;
-					orderDetails.Quantity = cart.Quantity;
-					_dataConext.Add(orderDetails);
-					_dataConext.SaveChanges();
+					var orderDetails = new OrderDetails
+					{
+						UserName = userEmail,
+						OrderCode = orderCode,
+						ProductId = cart.ProductId,
+						Price = cart.Price,
+						Quantity = cart.Quantity,
+						OrderModelId = orderItem.Id // Gán OrderModelId 
+					};
+
+					orderItem.OrderDetails.Add(orderDetails);
 				}
+
+				// Thêm OrderModel vào danh sách
+				_dataConext.Add(orderItem);
+
+				// Lưu thay đổi
+				_dataConext.SaveChanges();
+
 				HttpContext.Session.Remove("Cart");
 				TempData["success"] = "Order created successfully!";
 				return RedirectToAction("Index", "Cart");

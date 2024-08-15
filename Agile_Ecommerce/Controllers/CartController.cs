@@ -43,7 +43,7 @@ namespace Agile_Ecommerce.Controllers
 				cartItems.Quantity += 1;
 			}
 			HttpContext.Session.SetJson("Cart", cart);
-
+			
 			TempData["success"] = "Add product to cart Successfully";
 
 			return Redirect(Request.Headers["Referer"].ToString());
