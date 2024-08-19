@@ -12,5 +12,6 @@ namespace Agile_Ecommerce.Models.ViewModels
 		public string Password { get; set; }
 
 		public string ReturnUrl { get; set; }
-	}
+        public string VerificationCode { get; set; }
+    }
 }

@@ -8111,24 +8111,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nguye\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\tai16\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Backup\\Agile_EcommerceSite\\Agile_Ecommerce\\Agile_Ecommerce.csproj",
+      "projectUniqueName": "C:\\Users\\tai16\\OneDrive\\Desktop\\yyy\\Agile_EcommerceSite\\Agile_Ecommerce\\Agile_Ecommerce.csproj",
       "projectName": "Agile_Ecommerce",
-      "projectPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Backup\\Agile_EcommerceSite\\Agile_Ecommerce\\Agile_Ecommerce.csproj",
-      "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Backup\\Agile_EcommerceSite\\Agile_Ecommerce\\obj\\",
+      "projectPath": "C:\\Users\\tai16\\OneDrive\\Desktop\\yyy\\Agile_EcommerceSite\\Agile_Ecommerce\\Agile_Ecommerce.csproj",
+      "packagesPath": "C:\\Users\\tai16\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tai16\\OneDrive\\Desktop\\yyy\\Agile_EcommerceSite\\Agile_Ecommerce\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\tai16\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8136,7 +8131,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8216,7 +8210,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
