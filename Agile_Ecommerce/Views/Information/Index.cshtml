@@ -1,0 +1,59 @@
+﻿@using ShoppingOnline.Models
+@model UserModel
+
+<h2>Thông tin khách hàng</h2>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card shadow-sm rounded-3">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-5">
+                        <div class="circle-placeholder" style="width: 150px; height: 150px; margin: 0 auto;"></div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Username" class="form-label fw-bold" style="font-size: 1.5rem;">Username:</label>
+                        <p class="form-control-plaintext text-muted" style="font-size: 1.2rem;">@Model.Username</p>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Email" class="form-label fw-bold" style="font-size: 1.5rem;">Email:</label>
+                        <p class="form-control-plaintext text-muted" style="font-size: 1.2rem;">@Model.Email</p>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="PhoneNumber" class="form-label fw-bold" style="font-size: 1.5rem;">Phone Number:</label>
+                        <p class="form-control-plaintext text-muted" style="font-size: 1.2rem;">@Model.PhoneNumber</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Optional: Add some basic styling to make the card look nicer */
+    .card {
+        border: 1px solid #eee; /* Light border */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a deeper shadow */
+    }
+
+    .card-body {
+        padding: 25px;
+    }
+
+    .form-label {
+        font-size: 1.1rem;
+    }
+
+    .form-control-plaintext {
+        font-size: 1rem;
+    }
+
+    .circle-placeholder {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #eee; /* Light gray background */
+        /* You can add a border or other styling here */
+        margin: 0 auto; /* Center horizontally */
+    }
+</style>
