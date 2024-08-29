@@ -44,9 +44,9 @@ namespace Agile_Ecommerce.Controllers
                 FirstName = firstName,
                 LastName = lastName,
                 Address = orderModel.Address,
-                //Town = orderModel.City,
-                //Email = user.Email,
-                Telephone = orderModel.Telephone
+                Town = user.City,
+                Email = user.Email,
+                Telephone = user.PhoneNumber
             };
 
             return View(checkoutVM);
