@@ -124,7 +124,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
                 category.Slug = category.Name.Replace(" ", "-");
 
                 // Kiểm tra slug có trùng với slug hiện tại hay không
-                var slug = await _dataContext.Categories.FirstOrDefaultAsync(p => p.Slug == category.Slug && p.Id != Id);
+                var slug = await _dataContext.Categories.FirstOrDefaultAsync(p => p.Slug == category.Slug && p.CategoryId != Id);
 
                 if (slug != null)
                 {

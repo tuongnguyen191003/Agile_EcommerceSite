@@ -15,7 +15,8 @@ namespace Agile_Ecommerce.Repository
 		public DbSet<CategoryModel> Categories { get; set; }
 		public DbSet<OrderModel> Orders { get; set; }
 		public DbSet<OrderDetails> OrderDetails { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+		public DbSet<WishListItems> WishListItems { get; set; }
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Khai báo mối quan hệ giữa OrderModel và OrderDetails
             modelBuilder.Entity<OrderModel>()
