@@ -30736,6 +30736,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\84b61cef-14a4-4c8e-8ffb-55174aa043ed_Apple Watch Ultra 2.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\96d5e9f2-bdb7-4f84-af95-51336bbe4b33_1bd9ba6f-cbe0-4160-91aa-9847318fa791_0025500_blue_550.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Agile_Ecommerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Agile_Ecommerce</BasePath>
+      <RelativePath>images/products/96d5e9f2-bdb7-4f84-af95-51336bbe4b33_1bd9ba6f-cbe0-4160-91aa-9847318fa791_0025500_blue_550.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\96d5e9f2-bdb7-4f84-af95-51336bbe4b33_1bd9ba6f-cbe0-4160-91aa-9847318fa791_0025500_blue_550.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\AirPods Pro 2.png))">
       <SourceType>Package</SourceType>
       <SourceId>Agile_Ecommerce</SourceId>

@@ -23,7 +23,7 @@
 	<div class="features_items">
 		<!--features_items-->
 		<h2 class="title text-center">Features Items</h2>
-		@foreach(var item in Model)
+		@* @foreach(var item in Model)
 		{
 			<div class="col-sm-4">
 				<div class="product-image-wrapper">
@@ -38,7 +38,11 @@
 								<p>@item.Name</p>
 								<p>Category: @item.Category.Name</p>
 								<p>Brand: @item.Brand.Name</p>
-								<a asp-controller="Cart" asp-action="Add" asp-route-Id ="@item.Id" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+								<ul class="item_btns_group ul_li">
+									<li><a class="addtocart_btn" asp-controller="Cart" asp-action="Add" asp-route-id="@item.Id">Add To Cart</a></li>
+									<li><a href="#!"><i class="fa-solid fa-arrows-rotate"></i></a></li>
+									<li><a asp-controller="WishList" asp-action="Add" asp-route-id="@item.Id"><i class="fa-solid fa-heart"></i></a></li>
+								</ul>
 							</div>
 						</a>
 							
@@ -56,6 +60,6 @@
 		
 
 	</div><!--features_items-->
-	
+	 *@
 </div>
 <partial name="_paging" model="@pager" />

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Agile_Ecommerce.Models
 {
@@ -11,9 +12,17 @@ namespace Agile_Ecommerce.Models
 		public decimal Price { get; set; }
 		public int Quantity { get; set; }
         public int OrderModelId { get; set; }
-        [ForeignKey("OrderModelId")]
+        //[ForeignKey("OrderModelId")]
         public OrderModel Order { get; set; }
-        [ForeignKey("ProductId")]
+        //[ForeignKey("ProductId")]
 		public ProductModel Product { get; set; }
-	}
-}
+
+
+            //[ForeignKey("Order")]
+            public int OrderId { get; set; }
+
+            public string ProductName { get; set; }
+ 
+            public decimal? Discount { get; set; }
+        }
+    }
