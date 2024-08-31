@@ -10,8 +10,8 @@ using Agile_Ecommerce.Repository;
 namespace Agile_Ecommerce.Controllers
 {
 	public class WishLishController : Controller
-	{
-	
+
+		{
 			private readonly UserManager<AppUserModel> _userManager;
 			private readonly DataContext _context;
 
@@ -30,22 +30,22 @@ namespace Agile_Ecommerce.Controllers
 				}
 
 				var product = await _context.Products.FindAsync(productId);
-				//if (product == null)
-				//{
-				//	return NotFound(); // Sản phẩm không tồn tại
-				//}
-
-				// Kiểm tra xem sản phẩm đã có trong danh sách yêu thích chưa
-				var existingItem = _context.WishListItems
-					.FirstOrDefault(w => w.ProductId == productId && w.UserId == user.Id);
-
-				if (existingItem != null)
+				if (product == null)
 				{
-					TempData["Message"] = "Product is already in your wishlist.";
-					return RedirectToAction("Index", "WishList"); // Hoặc trở về trang hiện tại nếu cần
+					return NotFound(); // Sản phẩm không tồn tại
 				}
 
-				//string stockStatus = product. > 0 ? "In Stock" : "Out of Stock";
+				// Kiểm tra xem sản phẩm đã có trong danh sách yêu thích chưa
+				//var existingItem = _context.WishListItems
+				//	.FirstOrDefault(w => w.ProductId == productId && w.UserId == user.Id);
+
+				//if (existingItem != null)
+				//{
+				//	TempData["Message"] = "Product is already in your wishlist.";
+				//	return RedirectToAction("Index", "WishList"); // Hoặc trở về trang hiện tại nếu cần
+				//}
+
+				//string stockStatus = ProductModel. > 0 ? "In Stock" : "Out of Stock";
 
 				var wishlistItem = new WishListItems
 				{
@@ -120,26 +120,19 @@ namespace Agile_Ecommerce.Controllers
 			[Authorize]
 			[HttpGet]
 			public async Task<IActionResult> Index()
-        {
-            var user = await _userManager.GetUserAsync(User);
+			{
+				var user = await _userManager.GetUserAsync(User);
+				if (user == null)
+				{
+					return RedirectToAction("Login", "Account");
+				}
 
-            // Handle unlogged-in users
-            if (user == null)
-            {
-                return RedirectToAction("Login", "Account"); // Redirect to login
-            }
+				var wishlistItems = _context.WishListItems.Where(w => w.UserId == user.Id).ToList();
+				ViewBag.WishlistCount = wishlistItems.Count;
+				return View(wishlistItems);
+			}
 
-            // Fetch wishlist items for the logged-in user
-            var wishlistItems = _context.WishListItems
-                .Where(w => w.UserId == user.Id)
-                .ToList();
-
-            ViewBag.WishlistCount = wishlistItems.Count; // Get the wishlist count
-
-            return View(wishlistItems);
-        }
-
-        public async Task<int> GetWishListCount()
+			public async Task<int> GetWishListCount()
 			{
 				var user = await _userManager.GetUserAsync(User);
 				if (user != null)
@@ -151,4 +144,3 @@ namespace Agile_Ecommerce.Controllers
 
 		}
 	}
-

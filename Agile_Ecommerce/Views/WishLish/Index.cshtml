@@ -39,7 +39,7 @@
                                     <div class="cart_product">
                                         <img src="~/frontend/images/products/@item.Image" alt="Getyootech - Gadgets Ecommerce Site Template">
                                         <h3>
-                                            <a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId">
+                                            <a asp-controller="Product" asp-action="Details" asp-route-id="@item.Id">
                                                 @item.ProductName
                                             </a>
                                         </h3>
@@ -47,15 +47,15 @@
                                     </div>
                                 </td>
                                 <td class="text-center"><span class="price_text">@item.Price</span></td>
-                                <td class="text-center"><span class="price_text @(item.StockStatus == "In Stock" ? "text-success" : "text-danger")">@item.StockStatus</span></td>
+                               @*  <td class="text-center"><span class="price_text @(item.StockStatus == "In Stock" ? "text-success" : "text-danger")">@item.StockStatus</span></td> *@
                                 <td class="text-center">
-                                    <a asp-controller="Cart" asp-action="Add" asp-route-productId="@item.ProductId" class="btn btn_gray">
+                                    <a asp-controller="Cart" asp-action="Add" asp-route-productId="@item.Id" class="btn btn_gray">
                                         Add To Cart
                                     </a>
                                 </td>
                                 <td class="text-center">
                                     <form asp-controller="WishList" asp-action="Remove" method="post">
-                                        <input type="hidden" name="productId" value="@item.ProductId" />
+                                        <input type="hidden" name="productId" value="@item.Id" />
                                         <button type="submit" class="btn btn_danger">
                                             <i class="fal fa-trash-alt"></i>
                                         </button>

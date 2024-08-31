@@ -29,7 +29,14 @@
 					</a>
 					<div class="choose">
 						<ul class="nav nav-pills nav-justified">
-							<li><a href="#"><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+							@if (User.Identity?.IsAuthenticated ?? false)
+							{
+								<form method="post" asp-controller="WishLish" asp-action="Add">
+									<input type="hidden" name="productId" value="@item.Id" />
+									<button type="submit" class="btn btn-primary">Thêm vào danh sách yêu thích</button>
+								</form>
+							}
+
 							<li><a href="#"><i class="fa fa-plus-square"></i>Add to compare</a></li>
 						</ul>
 					</div>
