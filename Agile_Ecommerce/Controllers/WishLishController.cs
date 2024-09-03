@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Agile_Ecommerce.Models;
-using ShoppingOnline.Repository;
 using Agile_Ecommerce.Repository;
 
 
