@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e1akQnj6ePOK3R+ruW5phK5pgN1PRILHT56lMIJ+ddoGovziJQSRerMJ/q0OWRwlgOx+IQAFWe5nakUNR2azhg==",
+  "dgSpecHash": "ZB3bvaPncXY8BticSwl6AyqRSUe0617fKw9bHAJqTuUiD1AuJ+9kELpbt5JF1MIBTbnSJKpZMp3JKOucnfPO9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tai16\\OneDrive\\Desktop\\agile\\Agile_EcommerceSite\\Agile_Ecommerce\\Agile_Ecommerce.csproj",
+  "projectFilePath": "C:\\Users\\tai16\\OneDrive\\Desktop\\ttt\\Agile_EcommerceSite\\Agile_Ecommerce\\Agile_Ecommerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tai16\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\tai16\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

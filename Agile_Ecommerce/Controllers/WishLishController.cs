@@ -100,7 +100,7 @@ namespace Agile_Ecommerce.Controllers
 
 				// Tìm sản phẩm trong wishlist dựa trên ProductId và UserId
 				var wishlistItem = await _context.WishListItems
-					.FirstOrDefaultAsync(w => w.ProductId == productId && w.UserId == user.Id);
+					.FirstOrDefaultAsync(w =>  w.UserId == user.Id);
 
 				if (wishlistItem == null)
 				{
@@ -119,7 +119,7 @@ namespace Agile_Ecommerce.Controllers
 
 			[Authorize]
 			[HttpGet]
-			public async Task<IActionResult> Index()
+			public async Task<IActionResult>Index()
 			{
 				var user = await _userManager.GetUserAsync(User);
 				if (user == null)

@@ -41,12 +41,12 @@ namespace Agile_Ecommerce.Controllers
                 //CartItems = cartItems ?? new List<CartItemModel>(),  // Đảm bảo CartItems luôn được khởi tạ
                 CartItems = cartItems,
                 GrandTotal = cartItems.Sum(x => x.Quantity * x.Price),
-                FirstName = firstName,
-                LastName = lastName,
-                Address = orderModel.Address,
-                Town = user.City,
-                Email = user.Email,
-                Telephone = user.PhoneNumber
+                //FirstName = firstName,
+                //LastName = lastName,
+                //Address = orderModel.Address,
+                //Town = user.City,
+                //Email = user.Email,
+                //Telephone = user.PhoneNumber
             };
 
             return View(checkoutVM);

@@ -97,7 +97,7 @@
 								@if(User.Identity?.IsAuthenticated ?? false)
 								{ 
 									<li><a asp-controller="Information"><i class="fa fa-user"></i> Account</a></li>
-									<li><a asp-controller="WishList"><i class="fa fa-star"></i> Wishlist</a></li>
+									<li><a asp-controller="WishLish"><i class="fa fa-star"></i> Wishlist</a></li>
 									<li><a asp-controller="Checkout"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 									<li><a asp-controller="Account" asp-action="Logout"><i class="fa fa-lock"></i>Hi, @User.Identity.Name, Logout</a></li>
 									
