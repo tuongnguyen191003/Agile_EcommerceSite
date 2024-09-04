@@ -1301,3 +1301,4 @@ C:\Users\tai16\OneDrive\Desktop\agile\Agile_EcommerceSite\Agile_Ecommerce\obj\De
 C:\Users\tai16\OneDrive\Desktop\agile\Agile_EcommerceSite\Agile_Ecommerce\obj\Debug\net8.0\Agile_Ecommerce.pdb
 C:\Users\tai16\OneDrive\Desktop\agile\Agile_EcommerceSite\Agile_Ecommerce\obj\Debug\net8.0\Agile_Ecommerce.genruntimeconfig.cache
 C:\Users\tai16\OneDrive\Desktop\agile\Agile_EcommerceSite\Agile_Ecommerce\obj\Debug\net8.0\ref\Agile_Ecommerce.dll
+C:\Users\tai16\OneDrive\Desktop\agile\Agile_EcommerceSite\Agile_Ecommerce\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll

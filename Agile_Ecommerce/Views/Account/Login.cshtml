@@ -40,6 +40,7 @@
 							<button class="btn btn-primary">Login</button>
 						</div>
 						<a asp-action="Create" asp-controller="Account">Create new account</a>
+						<a asp-action="ExternalLogin" asp-route-provider="Google" asp-route-returnUrl="@Model.ReturnUrl">Login with Google</a>
 					</form>
 				</div><!--/login form-->
 			</div>

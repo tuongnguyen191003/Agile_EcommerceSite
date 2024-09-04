@@ -1,5 +1,7 @@
 ﻿using Agile_Ecommerce.Models;
 using Agile_Ecommerce.Repository;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,6 +21,27 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromMinutes(30);
     options.Cookie.IsEssential = true;
 });
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+})
+.AddCookie(options =>
+{
+    options.LoginPath = "/Account/Login";
+    options.LogoutPath = "/Account/Logout";
+    options.AccessDeniedPath = "/Account/AccessDenied";
+    options.ExpireTimeSpan = TimeSpan.FromDays(14);
+    options.SlidingExpiration = true;
+})
+.AddGoogle(options =>
+{
+    options.ClientId = "1086922780549-baesn1n2vp3r9ldesfb762b2gjq3qrd3.apps.googleusercontent.com";
+    options.ClientSecret = "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";
+    options.CallbackPath = "/signin-google";
+});
+
 
 builder.Services.AddIdentity<AppUserModel, IdentityRole>(/*options => options.SignIn.RequireConfirmedAccount = true*/ /*xác thực account*/)
 	.AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();

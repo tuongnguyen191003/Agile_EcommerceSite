@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using ShoppingOnline.Models;
 using System.Net.Mail;
 using System.Net;
+using System.Security.Claims;
 
 namespace ShoppingOnline.Controllers
 {
@@ -205,5 +206,65 @@ public async Task<IActionResult> Logout(string returnUrl = "")
 			
 			return RedirectToAction("Index", "Home");
 		}
-	}
+        [HttpGet]
+        public IActionResult ExternalLogin(string provider, string returnUrl)
+        {
+            var redirectUrl = Url.Action("ExternalLoginCallback", "Account", new { returnUrl });
+            var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider, redirectUrl);
+            return Challenge(properties, provider);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ExternalLoginCallback(string returnUrl = null, string remoteError = null)
+        {
+            if (remoteError != null)
+            {
+                ModelState.AddModelError(string.Empty, $"Error from external provider: {remoteError}");
+                return View("Login");
+            }
+
+            var info = await _signInManager.GetExternalLoginInfoAsync();
+            if (info == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            // Sign in the user with this external login provider if the user already has a login
+            var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
+            if (result.Succeeded)
+            {
+                return LocalRedirect(returnUrl ?? "/");
+            }
+
+            // If the user does not have an account, create one
+            var email = info.Principal.FindFirstValue(ClaimTypes.Email);
+            if (email != null)
+            {
+                var user = await _userManage.FindByEmailAsync(email);
+                if (user == null)
+                {
+                    // Create a new user account
+                    user = new AppUserModel { UserName = email, Email = email };
+                    var createUserResult = await _userManage.CreateAsync(user);
+                    if (createUserResult.Succeeded)
+                    {
+                        // Add the external login to the user account
+                        var addLoginResult = await _userManage.AddLoginAsync(user, info);
+                        if (addLoginResult.Succeeded)
+                        {
+                            await _signInManager.SignInAsync(user, isPersistent: false);
+                            return LocalRedirect(returnUrl ?? "/");
+                        }
+                    }
+                    foreach (var error in createUserResult.Errors)
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
+                }
+            }
+
+            // If we got this far, something failed, redisplay the form
+            return View("Login");
+        }
+    }
 }
