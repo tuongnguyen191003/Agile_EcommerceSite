@@ -4,9 +4,120 @@
 	ViewData["title"] = "Category";
 	Layout = "_CartLayout";
 }
+
+<!-- Thêm CSS vào phần đầu trang -->
+<style>
+	/* Tùy chỉnh chung cho phần Features Items */
+	.features_items {
+		padding: 20px 0;
+	}
+
+		.features_items .title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 30px;
+			color: #ff9800;
+		}
+
+	/* Tùy chỉnh khung sản phẩm */
+	.product-image-wrapper {
+		border: 1px solid #e1e1e1;
+		margin-bottom: 20px;
+		border-radius: 10px;
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		transition: all 0.3s ease;
+	}
+
+		.product-image-wrapper:hover {
+			box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+		}
+
+	/* Tùy chỉnh hình ảnh sản phẩm */
+	.productinfo img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		margin-bottom: 15px;
+		border-radius: 5px;
+	}
+
+	/* Tùy chỉnh phần thông tin sản phẩm */
+	.productinfo h2 {
+		color: #ff9800;
+		font-size: 22px;
+		font-weight: bold;
+	}
+
+	.productinfo p {
+		font-size: 16px;
+		color: #333;
+		margin-bottom: 10px;
+	}
+
+	/* Tùy chỉnh nút Add to Cart */
+	.add-to-cart {
+		background-color: #28a745;
+		color: white;
+		border-radius: 5px;
+		padding: 10px 15px;
+		font-size: 14px;
+		transition: background-color 0.3s ease;
+		text-transform: uppercase;
+	}
+
+		.add-to-cart:hover {
+			background-color: #218838;
+			color: white;
+		}
+
+	/* Tùy chỉnh nút thêm vào danh sách yêu thích */
+	.btn-primary {
+		background-color: #ff9800;
+		color: white;
+		border-radius: 5px;
+		padding: 10px 15px;
+		font-size: 14px;
+		transition: background-color 0.3s ease;
+		text-transform: uppercase;
+		margin-top: 10px;
+	}
+
+		.btn-primary:hover {
+			background-color: #e68a00;
+		}
+
+	/* Tùy chỉnh danh sách điều hướng (Choose) */
+	.choose ul {
+		list-style: none;
+		padding: 0;
+		margin: 15px 0 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+		.choose ul li {
+			flex: 1;
+			text-align: center;
+		}
+
+			.choose ul li a {
+				color: #333;
+				font-size: 14px;
+				text-transform: uppercase;
+				display: inline-block;
+				padding: 10px 0;
+			}
+
+				.choose ul li a i {
+					margin-right: 5px;
+				}
+</style>
+
 <div class="col-sm-3">
 	@Html.Partial("_SidebarPartial")
 </div>
+
 <div class="col-sm-9 padding-right">
 	<div class="features_items">
 		<!--features_items-->
@@ -43,12 +154,5 @@
 				</div>
 			</div>
 		}
-
-
 	</div><!--features_items-->
-
-
-
-
-
 </div>
