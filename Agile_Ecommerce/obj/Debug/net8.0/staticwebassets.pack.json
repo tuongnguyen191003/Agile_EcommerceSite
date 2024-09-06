@@ -7465,6 +7465,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\tai16\\OneDrive\\Desktop\\agile\\Agile_EcommerceSite\\Agile_Ecommerce\\wwwroot\\frontend\\images\\profiles\\6ba10be3-cdb0-4381-bcea-8c0441a6fba4_CHATSS.png",
+      "PackagePath": "staticwebassets\\frontend\\images\\profiles\\6ba10be3-cdb0-4381-bcea-8c0441a6fba4_CHATSS.png"
+    },
+    {
+      "Id": "C:\\Users\\tai16\\OneDrive\\Desktop\\agile\\Agile_EcommerceSite\\Agile_Ecommerce\\wwwroot\\frontend\\images\\profiles\\79d92561-5e63-4a22-b5b0-5810eb64d89c_CHATSS.png",
+      "PackagePath": "staticwebassets\\frontend\\images\\profiles\\79d92561-5e63-4a22-b5b0-5810eb64d89c_CHATSS.png"
+    },
+    {
       "Id": "C:\\Users\\tai16\\OneDrive\\Desktop\\agile\\Agile_EcommerceSite\\Agile_Ecommerce\\wwwroot\\images\\404\\404.png",
       "PackagePath": "staticwebassets\\images\\404\\404.png"
     },

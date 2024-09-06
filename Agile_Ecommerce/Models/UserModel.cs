@@ -17,5 +17,15 @@ namespace ShoppingOnline.Models
 		[Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
 		public string ConfirmPassword { get; set; }
         public string VerificationCode { get; set; }
+
+        public string FullName { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public DateTime? DateOfBirth { get; set; }
+        public string ProfileImage { get; set; }
     }
 }
+
+
+
+   

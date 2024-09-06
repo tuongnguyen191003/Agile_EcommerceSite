@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using ShoppingOnline.Models;
 using System.Net.Mail;
 using System.Net;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Hosting;
 
 namespace ShoppingOnline.Controllers
 {
@@ -12,11 +14,14 @@ namespace ShoppingOnline.Controllers
 	{
 		private UserManager<AppUserModel> _userManage;
 		private SignInManager<AppUserModel> _signInManager;
-		public AccountController(SignInManager<AppUserModel> signInManager, UserManager<AppUserModel> userMange)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public AccountController(SignInManager<AppUserModel> signInManager, UserManager<AppUserModel> userMange, IWebHostEnvironment webHostEnvironment)
 		{
 			_signInManager = signInManager;
 			_userManage = userMange;
-		}
+            _webHostEnvironment = webHostEnvironment;
+
+        }
 		public IActionResult Login(string returnUrl)
 		{
 			return View(new LoginViewModel { ReturnUrl = returnUrl});
@@ -205,5 +210,180 @@ public async Task<IActionResult> Logout(string returnUrl = "")
 			
 			return RedirectToAction("Index", "Home");
 		}
+        [HttpGet]
+        public IActionResult ExternalLogin(string provider, string returnUrl)
+        {
+            var redirectUrl = Url.Action("ExternalLoginCallback", "Account", new { returnUrl });
+            var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider, redirectUrl);
+            return Challenge(properties, provider);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ExternalLoginCallback(string returnUrl = null, string remoteError = null)
+        {
+            if (remoteError != null)
+            {
+                ModelState.AddModelError(string.Empty, $"Error from external provider: {remoteError}");
+                return View("Login");
+            }
+
+            var info = await _signInManager.GetExternalLoginInfoAsync();
+            if (info == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            // Sign in the user with this external login provider if the user already has a login
+            var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
+            if (result.Succeeded)
+            {
+                return LocalRedirect(returnUrl ?? "/");
+            }
+
+            // If the user does not have an account, create one
+            var email = info.Principal.FindFirstValue(ClaimTypes.Email);
+            if (email != null)
+            {
+                var user = await _userManage.FindByEmailAsync(email);
+                if (user == null)
+                {
+                    // Create a new user account
+                    user = new AppUserModel { UserName = email, Email = email };
+                    var createUserResult = await _userManage.CreateAsync(user);
+                    if (createUserResult.Succeeded)
+                    {
+                        // Add the external login to the user account
+                        var addLoginResult = await _userManage.AddLoginAsync(user, info);
+                        if (addLoginResult.Succeeded)
+                        {
+                            await _signInManager.SignInAsync(user, isPersistent: false);
+                            return LocalRedirect(returnUrl ?? "/");
+                        }
+                    }
+                    foreach (var error in createUserResult.Errors)
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
+                }
+            }
+
+            // If we got this far, something failed, redisplay the form
+            return View("Login");
+        }
+		[HttpGet]
+		public async Task<IActionResult> EditProfile()
+		{
+			var user = await _userManage.GetUserAsync(User);
+
+			if (user == null)
+			{
+				return RedirectToAction("Login", "Account");
+			}
+
+			var model = new EditProfileViewModel
+			{
+				FullName = user.FullName,
+				DateOfBirth = user.DateOfBirth,
+				PhoneNumber = user.PhoneNumber,
+				Address = user.Address,
+				City = user.City,
+				CurrentProfileImage = user.ProfileImage ?? "/images/default-user.png"
+			};
+
+			return View(model);
+		}
+
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> EditProfile(EditProfileViewModel model)
+		{
+			if (ModelState.IsValid)
+			{
+				var user = await _userManage.GetUserAsync(User);
+
+				if (user == null)
+				{
+					return RedirectToAction("Login", "Account");
+				}
+
+				// Update user details
+				user.FullName = model.FullName;
+				user.DateOfBirth = model.DateOfBirth;
+				user.PhoneNumber = model.PhoneNumber;
+				user.Address = model.Address;
+				user.City = model.City;
+
+				// Handle image upload
+				if (model.ProfileImageUpload != null)
+				{
+					string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "frontend/images/profiles");
+					string imageName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(model.ProfileImageUpload.FileName);
+					string filePath = Path.Combine(uploadDir, imageName);
+
+					// Ensure directory exists
+					if (!Directory.Exists(uploadDir))
+					{
+						Directory.CreateDirectory(uploadDir);
+					}
+
+					// Optional: Delete old picture if necessary
+					if (!string.IsNullOrEmpty(user.ProfileImage))
+					{
+						string oldFilePath = Path.Combine(uploadDir, Path.GetFileName(user.ProfileImage));
+						if (System.IO.File.Exists(oldFilePath))
+						{
+							try
+							{
+								System.IO.File.Delete(oldFilePath);
+							}
+							catch (Exception ex)
+							{
+								ModelState.AddModelError("", "An error occurred while deleting the old profile image.");
+								// Optionally log the exception
+								Console.WriteLine(ex.Message);
+							}
+						}
+					}
+
+					// Save new image
+					using (var stream = new FileStream(filePath, FileMode.Create))
+					{
+						await model.ProfileImageUpload.CopyToAsync(stream);
+					}
+					user.ProfileImage = "/frontend/images/profiles/" + imageName;
+				}
+
+				var result = await _userManage.UpdateAsync(user);
+
+				if (result.Succeeded)
+				{
+					TempData["success"] = "Profile updated successfully!";
+					return RedirectToAction("Index");
+				}
+
+				foreach (var error in result.Errors)
+				{
+					ModelState.AddModelError("", error.Description);
+				}
+			}
+			else
+			{
+				TempData["error"] = "There are some issues with the model.";
+				// Aggregate errors
+				List<string> errors = new List<string>();
+				foreach (var value in ModelState.Values)
+				{
+					foreach (var error in value.Errors)
+					{
+						errors.Add(error.ErrorMessage);
+					}
+				}
+				string errorMessage = string.Join("\n", errors);
+				ModelState.AddModelError("", errorMessage);
+			}
+
+			return View(model);
+		}
 	}
+
 }

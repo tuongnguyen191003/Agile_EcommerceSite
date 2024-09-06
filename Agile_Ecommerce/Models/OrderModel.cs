@@ -15,7 +15,7 @@ namespace Agile_Ecommerce.Models
             public string? Town { get; set; }
             public string? Country { get; set; }
             public string? Email { get; set; }
-            public string? Telephone { get; set; }
+            public string Telephone { get; set; }
             public string? CompanyName { get; set; }
             public string? Postcode { get; set; }
             public string? OtherNote { get; set; }

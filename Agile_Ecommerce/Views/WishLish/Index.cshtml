@@ -1,9 +1,99 @@
-﻿@model IEnumerable<WishListItems>
+﻿@model IEnumerable<Agile_Ecommerce.Models.WishListItems>
 
 @{
     ViewData["Title"] = "Wishlist";
-    Layout = "_Normal";
+    Layout = "_Layout";
 }
+
+<!-- Thêm CSS vào trang để cải thiện giao diện -->
+<style>
+    /* Tùy chỉnh bảng sản phẩm */
+    .cart_table table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+        .cart_table table th, .cart_table table td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart_table table th {
+            background-color: #f8f8f8;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+    /* Tùy chỉnh sản phẩm */
+    .cart_product {
+        display: flex;
+        align-items: center;
+    }
+
+        .cart_product img {
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart_product h3 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+            .cart_product h3 a {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+                .cart_product h3 a:hover {
+                    text-decoration: underline;
+                }
+
+    /* Tùy chỉnh các nút Add to Cart và Remove */
+    .btn-default.add-to-cart, .btn_danger {
+        padding: 8px 12px;
+        border-radius: 5px;
+        font-size: 14px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-default.add-to-cart {
+        background-color: #28a745;
+        color: white;
+        border: none;
+    }
+
+        .btn-default.add-to-cart:hover {
+            background-color: #218838;
+        }
+
+    .btn_danger {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+    }
+
+        .btn_danger:hover {
+            background-color: #c82333;
+        }
+
+    /* Tùy chỉnh giá */
+    .price_text {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Căn chỉnh cột */
+    .text-center {
+        text-align: center;
+    }
+</style>
 
 <!-- breadcrumb_section - start -->
 <div class="breadcrumb_section">
@@ -26,7 +116,6 @@
                         <tr>
                             <th>PRODUCT</th>
                             <th class="text-center">PRICE</th>
-                            <th class="text-center">STOCK STATUS</th>
                             <th class="text-center">ADD TO CART</th>
                             <th class="text-center">REMOVE</th>
                         </tr>
@@ -37,27 +126,26 @@
                             <tr>
                                 <td>
                                     <div class="cart_product">
-                                        <img src="~/frontend/images/products/@item.Image" alt="Getyootech - Gadgets Ecommerce Site Template">
+                                        <img src="~/images/products/@item.Image" alt="Getyootech - Gadgets Ecommerce Site Template" width="150" height="100">
                                         <h3>
                                             <a asp-controller="Product" asp-action="Details" asp-route-id="@item.Id">
                                                 @item.ProductName
                                             </a>
                                         </h3>
-
                                     </div>
                                 </td>
                                 <td class="text-center"><span class="price_text">@item.Price</span></td>
-                               @*  <td class="text-center"><span class="price_text @(item.StockStatus == "In Stock" ? "text-success" : "text-danger")">@item.StockStatus</span></td> *@
                                 <td class="text-center">
-                                    <a asp-controller="Cart" asp-action="Add" asp-route-productId="@item.Id" class="btn btn_gray">
+                                    <a asp-controller="Cart" asp-action="Add" asp-route-Id="@item.Id" class="btn btn-default add-to-cart">
                                         Add To Cart
                                     </a>
                                 </td>
                                 <td class="text-center">
-                                    <form asp-controller="WishList" asp-action="Remove" method="post">
+                                    <form asp-controller="WishLish" asp-action="Remove" method="post">
                                         <input type="hidden" name="productId" value="@item.Id" />
                                         <button type="submit" class="btn btn_danger">
-                                            <i class="fal fa-trash-alt"></i>
+                                           @*  <i class="fal fa-trash-alt"></i> *@
+                                            Remove
                                         </button>
                                     </form>
                                 </td>
@@ -76,3 +164,8 @@
     </div>
 </section>
 <!-- cart_section - end -->
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

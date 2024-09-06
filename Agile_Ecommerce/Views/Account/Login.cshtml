@@ -1,54 +1,75 @@
 ﻿@model LoginViewModel
 @{
-	ViewData["Title"] = "Login";
-	Layout = "_Login";
+    ViewData["Title"] = "Login";
+    Layout = "_Login";
 }
+
+<!-- Thêm CSS trực tiếp -->
+<style>
+    .custom-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-right: 10px; /* Khoảng cách giữa các nút */
+        font-size: 14px;
+        color: white; /* Màu chữ */
+        background-color: #FE980F; /* Màu nền */
+        border: none;
+        border-radius: 5px; /* Bo tròn góc */
+        text-decoration: none; /* Xóa gạch chân mặc định của link */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .custom-button:hover {
+            background-color: #FE980F; /* Màu khi hover */
+        }
+</style>
 
 <section id="">
-	<!--form-->
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-8 col-sm-offset-1">
-				<div class="login-form">
-					<!--login form-->
-					<h2>Login to your account</h2>
-					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-					<form asp-action="Login" asp-controller="Account">
-						
-						<div class="form-group">
-							<label>Username</label>
-							<input asp-for="Username" class="form-control" />
-							<span asp-validation-for="Username" class="text-danger" />
-						</div>
+    <!--form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-1">
+                <div class="login-form">
+                    <!--login form-->
+                    <h2>Login to your account</h2>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <form asp-action="Login" asp-controller="Account">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input asp-for="Username" class="form-control" />
+                            <span asp-validation-for="Username" class="text-danger" />
+                        </div>
 
-						<div class="form-group">
-							<label>Password</label>
-							<input asp-for="Password" class="form-control" />
-							<span asp-validation-for="Password" class="text-danger" />
-						</div>
-						<div class="form-group">
-							<label asp-for="VerificationCode" class="control-label">Verification Code</label>
-							<input asp-for="VerificationCode" class="form-control" />
-							<span asp-validation-for="VerificationCode" class="text-danger"></span>
-						</div>
-						
-						@* <span>
-							<input type="checkbox" class="checkbox">
-							Keep me signed in
-						</span> *@
-						<div class="form-group">
-							<button class="btn btn-primary">Login</button>
-						</div>
-						<a asp-action="Create" asp-controller="Account">Create new account</a>
-					</form>
-				</div><!--/login form-->
-			</div>
-		</div>
-	</div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input asp-for="Password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger" />
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="VerificationCode" class="control-label">Verification Code</label>
+                            <input asp-for="VerificationCode" class="form-control" />
+                            <span asp-validation-for="VerificationCode" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-primary">Login</button>
+                        </div>
+
+                        <!-- Chuyển đổi link thành button -->
+                        <div class="form-group">
+                            <a asp-action="Create" asp-controller="Account" class="custom-button">Create new account</a>
+                            <a asp-action="ExternalLogin" asp-route-provider="Google" asp-route-returnUrl="@Model.ReturnUrl" class="custom-button">Login with Google</a>
+                        </div>
+                    </form>
+                </div><!--/login form-->
+            </div>
+        </div>
+    </div>
 </section><!--/form-->
 @section Scripts {
-	@{
-		await Html.RenderPartialAsync("_ValidationScriptsPartial");
-	}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
-

@@ -6,6 +6,8 @@
     Layout = "_Layout";
 }
 
+
+
 <!-- breadcrumb_section - start -->
 <div class="breadcrumb_section">
     <div class="container">
@@ -81,7 +83,7 @@ else
                 <div class="checkout_widget bg-light">
                     <h3 class="checkout_widget_title">Billing Details</h3>
 
-                    <div class="row">
+                    <div class="row"> 
                         <div class="col col-md-6 col-sm-6">
                             <div class="form_item">
                                 <h4 class="input_title">First Name *</h4>
@@ -108,17 +110,21 @@ else
                     </div>
 
                     <div class="col col-md-6 col-sm-6">
-                        <div class="form_item">
-                            <h4 class="input_title">Postcode / Zip</h4>
-                            <input type="text" name="Postcode" asp-for="Postcode" value="@Model.Postcode" placeholder="Postcode / Zip">
-                        </div>
+                        <div class="col-md-6">
+                            <div class="form_item">
+                                <h4 class="input_title">Postcode / Zip</h4>
+                                <input type="text" name="Postcode" asp-for="Postcode" value="@Model.Postcode" placeholder="Postcode / Zip">
+                            </div>
                     </div>
                 </div>
-                <div class="form_item mb-5">
-                    <h4 class="input_title">Contact Info *</h4>
-                    <input type="email" name="Email" asp-for="Email" value="@Model.Email" placeholder="Email Address" required>
-                    <input type="tel" name="Telephone" asp-for="Telephone" value="@Model.Telephone" placeholder="Phone Number" required>
-                </div>
+                    <div class="col-md-6">
+                        <div class="form_item">
+                            <h4 class="input_title">Contact Info *</h4>
+                            <input type="email" name="Email" asp-for="Email" value="@Model.Email" placeholder="Email Address" required>
+                            <input type="tel" name="Telephone" asp-for="Telephone" value="@Model.Telephone" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+                    </div>
                 <div class="checkout_widget">
                     <h3 class="checkout_widget_title">Your Order</h3>
                     <div class="cart_table checkout_table">
@@ -191,4 +197,169 @@ else
         </div>
     </section>
 }
+
+<style>
+    /* Breadcrumb section */
+    .breadcrumb_section {
+        background-color: #f5f5f5;
+        padding: 15px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .breadcrumb_nav ul_li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .breadcrumb_nav ul_li li {
+        margin-right: 10px;
+    }
+
+    .breadcrumb_nav ul_li li a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Checkout form */
+    .checkout_section {
+        background-color: #f9f9f9;
+        padding: 40px 0;
+    }
+
+    .form_area {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+
+    /* Form input fields */
+    .form_item input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fafafa;
+    }
+
+    /* Input titles */
+    .input_title {
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Buttons */
+    .btn_primary {
+        background-color: #ff9800;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn_primary:hover {
+        background-color: #e68a00;
+    }
+
+    /* Table styling */
+    .checkout_table {
+        width: 100%;
+        margin-top: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .cart_table thead {
+        background-color: #f0f0f0;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .cart_table th, .cart_table td {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .cart_product {
+        display: flex;
+        align-items: center;
+    }
+
+    .cart_product img {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+
+    .quantity_count {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .total_text {
+        font-size: 1.5em;
+        color: #ff9800;
+        font-weight: bold;
+    }
+
+    .free_text {
+        color: green;
+        font-weight: bold;
+    }
+
+    /* Payment methods */
+    .checkout_payment_method {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        margin-top: 20px;
+    }
+
+    .radio_item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .radio_item input {
+        margin-right: 10px;
+    }
+
+    /* Custom styling for contact info row */
+    .contact-info-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-info-row .col-md-6 {
+        width: 50%;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+    .contact-info-row .col-md-6:last-child {
+        padding-right: 0;
+    }
+
+   
+
+</style>
+
+
 <!-- checkout_section - end -->
