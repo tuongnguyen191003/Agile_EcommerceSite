@@ -7,6 +7,8 @@ using System.Net.Mail;
 using System.Net;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Agile_Ecommerce.Repository;
 
 namespace ShoppingOnline.Controllers
 {
@@ -14,11 +16,13 @@ namespace ShoppingOnline.Controllers
 	{
 		private UserManager<AppUserModel> _userManage;
 		private SignInManager<AppUserModel> _signInManager;
+        private readonly DataContext _context;
         private readonly IWebHostEnvironment _webHostEnvironment;
-        public AccountController(SignInManager<AppUserModel> signInManager, UserManager<AppUserModel> userMange, IWebHostEnvironment webHostEnvironment)
+        public AccountController(SignInManager<AppUserModel> signInManager, UserManager<AppUserModel> userMange, DataContext context, IWebHostEnvironment webHostEnvironment)
 		{
 			_signInManager = signInManager;
 			_userManage = userMange;
+            _context = context;
             _webHostEnvironment = webHostEnvironment;
 
         }
@@ -384,6 +388,38 @@ public async Task<IActionResult> Logout(string returnUrl = "")
 
 			return View(model);
 		}
-	}
+        public async Task<IActionResult> MyOrders()
+        {
+            // Lấy thông tin người dùng hiện tại
+            var user = await _userManage.GetUserAsync(User);
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
 
+            // Truy vấn danh sách đơn hàng của người dùng
+            var orders = await _context.Orders
+                .Include(o => o.OrderDetails) // Bao gồm cả thông tin chi tiết đơn hàng
+                .Where(o => o.UserId == user.Id)
+                .ToListAsync();
+
+            return View(orders);
+        }
+        [HttpGet]
+        public async Task<IActionResult> OrderDetails(int id)
+        {
+            // Truy vấn đơn hàng và chi tiết đơn hàng theo Id
+            var order = await _context.Orders
+                .Include(o => o.OrderDetails)
+                .FirstOrDefaultAsync(o => o.Id == id);
+
+            if (order == null || order.UserId != _userManage.GetUserId(User))
+            {
+                return NotFound();
+            }
+
+            return View(order);
+        }
+
+    }
 }
