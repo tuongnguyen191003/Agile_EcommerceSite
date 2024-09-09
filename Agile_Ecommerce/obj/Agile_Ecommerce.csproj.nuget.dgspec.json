@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tai16\\OneDrive\\Desktop\\ttt\\ProjectSprint1\\Agile_Ecommerce\\Agile_Ecommerce.csproj": {}
+    "C:\\Users\\tai16\\OneDrive\\Desktop\\yyy\\ProjectSprint1\\Agile_Ecommerce\\Agile_Ecommerce.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tai16\\OneDrive\\Desktop\\ttt\\ProjectSprint1\\Agile_Ecommerce\\Agile_Ecommerce.csproj": {
+    "C:\\Users\\tai16\\OneDrive\\Desktop\\yyy\\ProjectSprint1\\Agile_Ecommerce\\Agile_Ecommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tai16\\OneDrive\\Desktop\\ttt\\ProjectSprint1\\Agile_Ecommerce\\Agile_Ecommerce.csproj",
+        "projectUniqueName": "C:\\Users\\tai16\\OneDrive\\Desktop\\yyy\\ProjectSprint1\\Agile_Ecommerce\\Agile_Ecommerce.csproj",
         "projectName": "Agile_Ecommerce",
-        "projectPath": "C:\\Users\\tai16\\OneDrive\\Desktop\\ttt\\ProjectSprint1\\Agile_Ecommerce\\Agile_Ecommerce.csproj",
+        "projectPath": "C:\\Users\\tai16\\OneDrive\\Desktop\\yyy\\ProjectSprint1\\Agile_Ecommerce\\Agile_Ecommerce.csproj",
         "packagesPath": "C:\\Users\\tai16\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tai16\\OneDrive\\Desktop\\ttt\\ProjectSprint1\\Agile_Ecommerce\\obj\\",
+        "outputPath": "C:\\Users\\tai16\\OneDrive\\Desktop\\yyy\\ProjectSprint1\\Agile_Ecommerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tai16\\AppData\\Roaming\\NuGet\\NuGet.Config",

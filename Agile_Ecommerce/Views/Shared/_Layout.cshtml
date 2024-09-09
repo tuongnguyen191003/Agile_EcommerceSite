@@ -484,6 +484,11 @@
 			}
 		});
 	</script>
+	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+	<df-messenger intent="WELCOME"
+				  chat-title="Test_ai_chat"
+				  agent-id="1d5ac094-8517-46c9-9165-11bd8104d97e"
+				  language-code="en"></df-messenger>
 	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

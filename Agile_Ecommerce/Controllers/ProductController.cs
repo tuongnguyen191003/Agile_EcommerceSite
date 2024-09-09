@@ -54,5 +54,36 @@ namespace Agile_Ecommerce.Controllers
 			ViewBag.Keyword=searchTerm;
 			return View(products);
 		}
-	}
+        [HttpPost]
+        public async Task<IActionResult> Filter(decimal? minPrice, decimal? maxPrice, string sortOrder)
+        {
+            var products = _dataContext.Products.AsQueryable();
+
+            // Filter by price range
+            if (minPrice.HasValue)
+                products = products.Where(p => p.Price >= minPrice.Value);
+
+            if (maxPrice.HasValue)
+                products = products.Where(p => p.Price <= maxPrice.Value);
+
+            // Sorting
+            switch (sortOrder)
+            {
+                case "price_asc":
+                    products = products.OrderBy(p => p.Price);
+                    break;
+                case "price_desc":
+                    products = products.OrderByDescending(p => p.Price);
+                    break;
+                default:
+                    break;
+            }
+
+            var filteredProducts = await products.ToListAsync();
+
+            return View("Search", filteredProducts);
+        }
+    }
 }
+
+	
