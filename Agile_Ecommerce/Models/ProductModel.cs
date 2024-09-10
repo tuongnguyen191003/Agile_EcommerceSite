@@ -34,13 +34,13 @@ namespace Agile_Ecommerce.Models
         public CategoryModel Category { get; set; }
 
         public BrandModel Brand { get; set; }
-
+        
         //[Required(ErrorMessage = "Yêu cầu chọn hình ảnh")]
         public string Image { get; set; }
         [NotMapped]
         [FileExtension]
         //[Required(ErrorMessage = "Yêu cầu tải lên hình ảnh")]
         public IFormFile? ImageUpload { get; set; }
-       
+        public ICollection<RatingModel> Ratings { get; set; }
     }
 }
