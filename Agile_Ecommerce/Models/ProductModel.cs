@@ -31,6 +31,7 @@ namespace Agile_Ecommerce.Models
         [Range(1, int.MaxValue, ErrorMessage = "Yêu cầu chọn 1 danh mục")]
         public int CategoryId { get; set; }
 
+
         public CategoryModel Category { get; set; }
 
         public BrandModel Brand { get; set; }
@@ -41,6 +42,7 @@ namespace Agile_Ecommerce.Models
         [FileExtension]
         //[Required(ErrorMessage = "Yêu cầu tải lên hình ảnh")]
         public IFormFile? ImageUpload { get; set; }
-        public ICollection<RatingModel> Ratings { get; set; }
+        public List<RatingModel> Ratings { get; set; } = new List<RatingModel>();
     }
 }
+
