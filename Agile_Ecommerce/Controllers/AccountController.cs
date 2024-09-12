@@ -166,7 +166,7 @@ namespace ShoppingOnline.Controllers
         {
             // Configure your email settings here
             string fromEmail = "tai1672003@gmail.com"; // Replace with your email address
-            string password = "gxii jvmp yiqq hhaa"; // Replace with your email password
+            string password = "ecdg lndl jxbx qktz"; // Replace with your email password
             string subject = "Welcome to Our Website!";
 			string body = $"Thank you for registering with us, {user.Email}! Please verify your account by entering the following code: {user.VerificationCode}";
 

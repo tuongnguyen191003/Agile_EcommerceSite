@@ -10,6 +10,7 @@ namespace Agile_Ecommerce.Repository
 		{
 
 		}
+		public DbSet<SliderModel> Slider { get; set; } // Khai báo DbSet
 		public DbSet<BrandModel> Brands { get; set; }
 		public DbSet<ProductModel> Products { get; set; }
 		public DbSet<CategoryModel> Categories { get; set; }
