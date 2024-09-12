@@ -65,6 +65,16 @@ namespace Agile_Ecommerce.Controllers
 
             return View(product);
         }
+        public async Task<IActionResult> Search(string searchTerm)
+        {
+            var products = await _dataContext.Products
+                .Where(p => p.Name.Contains(searchTerm) || p.Description.Contains(searchTerm))
+                .ToListAsync();
+
+            ViewBag.Keyword = searchTerm;
+            return View(products);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Filter(decimal? minPrice, decimal? maxPrice, string sortOrder)
         {

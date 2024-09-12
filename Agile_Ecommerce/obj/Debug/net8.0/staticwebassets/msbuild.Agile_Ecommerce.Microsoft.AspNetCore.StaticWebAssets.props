@@ -29872,6 +29872,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\frontend\images\profiles\0258e3f8-8920-4c80-bb89-b44ab5b5f21d_79d92561-5e63-4a22-b5b0-5810eb64d89c_CHATSS.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\frontend\images\profiles\60d44bb9-124a-43eb-8a0b-44f2da3e8be9_79d92561-5e63-4a22-b5b0-5810eb64d89c_CHATSS.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Agile_Ecommerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Agile_Ecommerce</BasePath>
+      <RelativePath>frontend/images/profiles/60d44bb9-124a-43eb-8a0b-44f2da3e8be9_79d92561-5e63-4a22-b5b0-5810eb64d89c_CHATSS.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\frontend\images\profiles\60d44bb9-124a-43eb-8a0b-44f2da3e8be9_79d92561-5e63-4a22-b5b0-5810eb64d89c_CHATSS.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\frontend\images\profiles\6ba10be3-cdb0-4381-bcea-8c0441a6fba4_CHATSS.png))">
       <SourceType>Package</SourceType>
       <SourceId>Agile_Ecommerce</SourceId>
@@ -30719,6 +30735,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\1182abc6-e420-4543-a135-2feea4ecb253_samsung-galaxy-s24-plus.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\31647171-a2f4-4b3d-b281-a65c5b2981b1_0ff7b6e5-60a7-49ac-b682-616d2ec33b1f_iphone-15-pro-max_3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Agile_Ecommerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Agile_Ecommerce</BasePath>
+      <RelativePath>images/products/31647171-a2f4-4b3d-b281-a65c5b2981b1_0ff7b6e5-60a7-49ac-b682-616d2ec33b1f_iphone-15-pro-max_3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\31647171-a2f4-4b3d-b281-a65c5b2981b1_0ff7b6e5-60a7-49ac-b682-616d2ec33b1f_iphone-15-pro-max_3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\3a3afaf1-c6de-47e4-aee1-f5c1516ee753_xiaomi-redmi-note-13-pro-4g_13__1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Agile_Ecommerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Agile_Ecommerce</BasePath>
+      <RelativePath>images/products/3a3afaf1-c6de-47e4-aee1-f5c1516ee753_xiaomi-redmi-note-13-pro-4g_13__1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\3a3afaf1-c6de-47e4-aee1-f5c1516ee753_xiaomi-redmi-note-13-pro-4g_13__1.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\4cbebceb-139e-45f4-9936-1233f6240442_Apple Watch Series 9.png))">
       <SourceType>Package</SourceType>

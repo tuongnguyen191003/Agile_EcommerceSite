@@ -16,7 +16,7 @@ namespace Agile_Ecommerce.Controllers
 		{
 			CategoryModel catgory = _dataContext.Categories.Where(c =>  c.Slug == Slug).FirstOrDefault();
 			if (catgory == null) return RedirectToAction("Index");
-			var productsByCategory = _dataContext.Products.Where(p => p.CategoryId == catgory.CategoryId);
+			var productsByCategory = _dataContext.Products.Where(p => p.CategoryId == catgory.Id);
 			return View( await productsByCategory.OrderByDescending(c => c.Id).ToListAsync());
 		}
 	}

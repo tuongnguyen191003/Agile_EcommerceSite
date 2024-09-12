@@ -23,7 +23,7 @@
         </div>
 
         <div class="form-group">
-            <label asp-for="Description" >Description</label>
+            <label asp-for="Description">Description</label>
             <textarea asp-for="Description" class="form-control"></textarea>
             <span asp-validation-for="Description" class="text-danger"></span>
         </div>
@@ -55,7 +55,7 @@
             <button class="btn btn-primary">Create</button>
         </div>
     </form>
-    <a asp-action="Index">Back to List Product</a> 
+    <a asp-action="Index">Back to List Product</a>
 </div>
 
 @section Scripts {
@@ -63,7 +63,7 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
     @* <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
-    
+
     <script>
         CKEDITOR.replace('Description');
     </script> *@
@@ -77,7 +77,7 @@
     </script>
 
     <script>
-        $("#ImageUpload").change(function() {
+        $("#ImageUpload").change(function () {
             readURL(this);
         })
     </script>
