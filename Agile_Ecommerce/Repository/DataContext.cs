@@ -10,13 +10,16 @@ namespace Agile_Ecommerce.Repository
 		{
 
 		}
+		public DbSet<SliderModel> Slider { get; set; } // Khai báo DbSet
 		public DbSet<BrandModel> Brands { get; set; }
 		public DbSet<ProductModel> Products { get; set; }
 		public DbSet<CategoryModel> Categories { get; set; }
 		public DbSet<OrderModel> Orders { get; set; }
 		public DbSet<OrderDetails> OrderDetails { get; set; }
 		public DbSet<WishListItems> WishListItems { get; set; }
-		protected override void OnModelCreating(ModelBuilder modelBuilder)
+        public DbSet<RatingModel> Ratings { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Khai báo mối quan hệ giữa OrderModel và OrderDetails
             modelBuilder.Entity<OrderModel>()

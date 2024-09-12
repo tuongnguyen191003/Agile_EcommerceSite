@@ -136,9 +136,7 @@
                                 </td>
                                 <td class="text-center"><span class="price_text">@item.Price</span></td>
                                 <td class="text-center">
-                                    <a asp-controller="Cart" asp-action="Add" asp-route-Id="@item.Id" class="btn btn-default add-to-cart">
-                                        Add To Cart
-                                    </a>
+                                    <a asp-controller="Cart" asp-action="Add" asp-route-Id="@item.Id" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                 </td>
                                 <td class="text-center">
                                     <form asp-controller="WishLish" asp-action="Remove" method="post">
