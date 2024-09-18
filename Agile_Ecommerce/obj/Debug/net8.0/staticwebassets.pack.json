@@ -7865,6 +7865,14 @@
       "PackagePath": "staticwebassets\\images\\shop\\product9.jpg"
     },
     {
+      "Id": "C:\\Users\\tai16\\OneDrive\\Desktop\\ttt\\ProjectSprint1\\Agile_Ecommerce\\wwwroot\\images\\sliders\\3aef18b2-df84-4b8d-a43d-8f60dd7d39a4_nang-cap-ipone-performance-15-8.jpg",
+      "PackagePath": "staticwebassets\\images\\sliders\\3aef18b2-df84-4b8d-a43d-8f60dd7d39a4_nang-cap-ipone-performance-15-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tai16\\OneDrive\\Desktop\\ttt\\ProjectSprint1\\Agile_Ecommerce\\wwwroot\\images\\sliders\\890a4c77-cc1a-49e7-a6b5-b4d099aefd57_gaming-vivobook-banner-home-12-08.jpg",
+      "PackagePath": "staticwebassets\\images\\sliders\\890a4c77-cc1a-49e7-a6b5-b4d099aefd57_gaming-vivobook-banner-home-12-08.jpg"
+    },
+    {
       "Id": "C:\\Users\\tai16\\OneDrive\\Desktop\\ttt\\ProjectSprint1\\Agile_Ecommerce\\wwwroot\\images\\thumb\\shop_iphone_light__b2toggskllle_large_2.svg",
       "PackagePath": "staticwebassets\\images\\thumb\\shop_iphone_light__b2toggskllle_large_2.svg"
     },
@@ -8295,6 +8303,10 @@
     {
       "Id": "C:\\Users\\tai16\\OneDrive\\Desktop\\ttt\\ProjectSprint1\\Agile_Ecommerce\\wwwroot\\media\\products\\f2878112-1be5-4f85-b01e-ed9c83ff2dd7_ban-phim-co-e-dra-ek375-alpha-red-switch-1_1.jpg",
       "PackagePath": "staticwebassets\\media\\products\\f2878112-1be5-4f85-b01e-ed9c83ff2dd7_ban-phim-co-e-dra-ek375-alpha-red-switch-1_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tai16\\OneDrive\\Desktop\\ttt\\ProjectSprint1\\Agile_Ecommerce\\wwwroot\\~\\images\\sliders\\050ec667-be68-4f40-a4dd-635ab7b04d7d_gaming-vivobook-banner-home-12-08.jpg",
+      "PackagePath": "staticwebassets\\~\\images\\sliders\\050ec667-be68-4f40-a4dd-635ab7b04d7d_gaming-vivobook-banner-home-12-08.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Agile_Ecommerce.Microsoft.AspNetCore.StaticWebAssets.props",

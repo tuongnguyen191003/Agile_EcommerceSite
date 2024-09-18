@@ -20,7 +20,9 @@ namespace Agile_Ecommerce.Controllers
         public IActionResult Index()
         {
             var products = _dataConext.Products.Include("Category").Include("Brand").ToList();
-            return View(/*products)*/);
+            var slider = _dataConext.Slider.Where(s=>s.Status == 1 ).ToList();
+            ViewBag.Slider = slider;
+            return View(products);
         }
 
         public IActionResult Privacy()

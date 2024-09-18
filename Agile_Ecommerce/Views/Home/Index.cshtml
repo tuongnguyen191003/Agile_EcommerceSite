@@ -11,6 +11,7 @@
 		pageNo = pager.CurrentPage;
 	}
 }
+<partial name="_SliderPartial" />
 <div class="col-sm-3">
 	@Html.Partial("_SidebarPartial")
 </div>
@@ -23,7 +24,7 @@
 	<div class="features_items">
 		<!--features_items-->
 		<h2 class="title text-center">Features Items</h2>
-		@* @foreach(var item in Model)
+	@foreach(var item in Model)
 		{
 			<div class="col-sm-4">
 				<div class="product-image-wrapper">
@@ -60,6 +61,6 @@
 		
 
 	</div><!--features_items-->
-	 *@
+	 
 </div>
 <partial name="_paging" model="@pager" />
