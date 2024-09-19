@@ -156,7 +156,7 @@ namespace Agile_Ecommerce.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "media/sliders");
+            string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "images/sliders");
             string oldFileImage = Path.Combine(uploadDir, slider.Image);
 
             try

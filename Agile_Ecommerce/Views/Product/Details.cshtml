@@ -6,37 +6,10 @@
     Layout = "_CartLayout";
 }
 
-<style>
-    .star-rating .fa-star.checked {
-        color: gold;
-    }
-
-    .review-item {
-        border: 1px solid #ccc;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
-
-    .comment {
-        margin-top: 5px;
-    }
-
-    /* Căn giữa các sản phẩm được đề xuất */
-    #recommended-item-carousel .col-sm-4 {
-        float: none;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    #recommended-item-carousel .carousel-inner {
-        text-align: center;
-    }
-</style>
-
 <div class="row">
-    <div class="col-sm-3">
-        @* @Html.Partial("_SidebarPartial") *@
-    </div>
+    @* <div class="col-sm-3">
+    @Html.Partial("_SidebarPartial")
+    </div> *@
 
     <div class="col-sm-9 padding-right">
         <div class="product-details">
@@ -115,10 +88,10 @@
                 </ul>
             </div>
             <div class="tab-content">
-                <div class="tab-pane fade in active" id="details">
+                <div class="tab-pane fade in" id="details">
                     <p>
                         @Model.Description
-                    </p>    
+                    </p>
                 </div>
 
                 <div class="tab-pane fade" id="companyprofile">
@@ -129,7 +102,21 @@
 
                 <div class="tab-pane fade" id="reviews">
                     <div class="col-sm-12">
+                        <style>
+                            .star-rating .fa-star.checked {
+                                color: gold;
+                            }
 
+                            .review-item {
+                                border: 1px solid #ccc;
+                                padding: 10px;
+                                margin-bottom: 10px;
+                            }
+
+                            .comment {
+                                margin-top: 5px;
+                            }
+                        </style>
                         @if (System.Linq.Enumerable.Any(Model.Ratings))
                         {
                             foreach (var rating in Model.Ratings)
@@ -305,3 +292,203 @@
 
     </div>
 </div>
+
+<style>
+    /* Tổng quan */
+    body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-top {
+        display: flex;
+    }
+    .container {
+        padding: 30px 15px;
+    }
+
+    .header-container { /* Class của phần tử cha chung */
+        display: flex;
+    }
+
+    .nav nav-tabs {
+        flex-grow: 1; /* Cho phép thanh Details co giãn lấp đầy không gian còn lại */
+    }
+    .product-details {
+        /* Remove fixed width if any */
+        width: 100%;
+        /* Adjust padding/margin as needed */
+    }
+
+        .product-details img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+            .product-details img:hover {
+                transform: scale(1.05);
+            }
+
+    .product-information {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+        .product-information h2 {
+            font-size: 28px;
+            color: #343a40;
+            margin-bottom: 15px;
+        }
+
+        .product-information p {
+            font-size: 16px;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+    .product-price {
+        font-size: 24px;
+        color: #28a745;
+        font-weight: bold;
+    }
+
+    .quantity-wrapper {
+        margin-top: 15px;
+    }
+
+    .quantity-input {
+        width: 60px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    .cart {
+        margin-top: 20px;
+    }
+
+        .cart:hover {
+            background-color: #218838;
+        }
+
+    .nav-tabs {
+        border-bottom: 2px solid #ddd;
+    }
+
+        .nav-tabs li a {
+            color: #495057;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+            .nav-tabs li.active a,
+            .nav-tabs li a:hover {
+                background-color: #28a745;
+                color: white;
+                border-radius: 5px;
+            }
+
+    .tab-content {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Recommended items carousel */
+    .recommended_items {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+        .recommended_items .title {
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+    .product-image-wrapper {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .productinfo {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+        .productinfo img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+            .productinfo img:hover {
+                transform: scale(1.05);
+            }
+
+        .productinfo h2 {
+            font-size: 20px;
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+
+        .productinfo p {
+            color: #6c757d;
+            font-size: 16px;
+        }
+
+        .productinfo .btn {
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: none;
+            font-size: 14px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+            .productinfo .btn:hover {
+                background-color: #218838;
+            }
+
+    /* Carousel control buttons */
+    .recommended-item-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        color: #28a745;
+        transition: color 0.3s ease;
+    }
+
+        .recommended-item-control.left {
+            left: -20px; /* Adjust the position */
+        }
+
+        .recommended-item-control.right {
+            right: -20px; /* Adjust the position */
+        }
+
+        .recommended-item-control i {
+            font-size: 30px;
+            color: #28a745;
+            transition: color 0.3s ease;
+        }
+
+        .recommended-item-control:hover i {
+            color: #218838;
+        }
+
+</style>
