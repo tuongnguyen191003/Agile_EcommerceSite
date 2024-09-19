@@ -166,7 +166,7 @@ namespace ShoppingOnline.Controllers
         {
             // Configure your email settings here
             string fromEmail = "tai1672003@gmail.com"; // Replace with your email address
-            string password = "ecdg lndl jxbx qktz"; // Replace with your email password
+            string password = "dlrx mqte prnb dyok"; // Replace with your email password
             string subject = "Welcome to Our Website!";
 			string body = $"Thank you for registering with us, {user.Email}! Please verify your account by entering the following code: {user.VerificationCode}";
 
@@ -420,6 +420,36 @@ public async Task<IActionResult> Logout(string returnUrl = "")
 
             return View(order);
         }
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManage.GetUserAsync(User);
+
+                if (user == null)
+                {
+                    return RedirectToAction("Login", "Account");
+                }
+
+                var result = await _userManage.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+
+                if (result.Succeeded)
+                {
+                    await _signInManager.RefreshSignInAsync(user);
+                    TempData["success"] = "Password changed successfully!";
+                    return RedirectToAction("Index");
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+            }
+
+            return View(model);
+        }
+
 
     }
 }

@@ -8,7 +8,7 @@ namespace Agile_Ecommerce.Models.ViewModels
 		[Required(ErrorMessage = "Yêu cầu nhập username")]
 		public string Username { get; set; }
 		
-		[DataType(DataType.Password), Required(ErrorMessage = "Yêu cầu nhập mật khẩu")]
+		[DataType(DataType.Password)/*, Required(ErrorMessage = "Yêu cầu nhập mật khẩu")*/]
 		public string Password { get; set; }
 
 		public string ReturnUrl { get; set; }

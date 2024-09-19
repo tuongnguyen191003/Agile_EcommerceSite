@@ -15,9 +15,23 @@
                     <h2 class="title_text">My Account</h2>
                     <ul class="account_menu_list ul_li_block">
                         <li class="active"><a href="@Url.Action("Index", "Account")">Account Dashboard</a></li>
-                        <li><a asp-controller="Account" asp-action="EditProfile">Edit Profile</a></li>
-                        <li><a asp-controller="Account" asp-action="ChangePassword">Change Password</a></li>
-                        <li><a asp-controller="Account" asp-action="MyOrders">My Orders</a></li>
+                        <ul>
+                            <li>
+                                <form asp-controller="Account" asp-action="EditProfile" method="get">
+                                    <button type="submit">Edit Profile</button>
+                                </form>
+                            </li>
+                            <li>
+                                <form asp-controller="Account" asp-action="ChangePassword" method="post">
+                                    <button type="submit">Change Password</button>
+                                </form>
+                            </li>
+                            <li>
+                                <form asp-controller="Account" asp-action="MyOrders" method="get">
+                                    <button type="submit">My Orders</button>
+                                </form>
+                            </li>
+                        </ul>
                         <!-- Add more links as needed -->
                     </ul>
                 </div>
